@@ -64,4 +64,11 @@
         android:icon="@drawable/ic_kylin_powermenu"
         android:fragment="com.android.settings.kylinmod.PowerMenu" />
 
+    <!-- Animation Options -->
+    <PreferenceScreen
+        android:id="@+id/animation_options"
+        android:title="@string/animation_options_title"
+        android:icon="@drawable/ic_kylin_animations"
+        android:fragment="com.android.settings.kylinmod.AnimationOptions" />
+
 </PreferenceScreen>

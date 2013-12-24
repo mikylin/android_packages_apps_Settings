@@ -31,4 +31,15 @@
     <string name="show_network_speed_title">当前网速</string>
     <string name="show_network_speed_summary">在状态栏显示当前网速</string>
 
+    <!-- KylinMod Settings -->
+    <string name="kylin_settings_title">麒麟控</string>
+    <string name="power_menu_expanded_desktop_settings">扩展桌面设置</string>
+
+    <!-- Development shortcut -->
+    <string name="development_shortcut_title">开发快捷方式</string>
+    <string name="development_shortcut_summary">在通知区域和最近的应用程序列表中，选择开启\'清空数据\' 和 \'强制关闭\'.</string>	
+
+    <!-- Status bar  -->
+    <string name="status_bar_battery_show_percent_title">显示电池百分比</string>
+
 </resources>

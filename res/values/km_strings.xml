@@ -31,4 +31,8 @@
     <string name="show_network_speed_title">Network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>
 
+    <!-- KylinMod Settings -->
+    <string name="kylin_settings_title">KylinMod settings</string>
+    <string name="power_menu_expanded_desktop_settings">Expanded desktop settings</string>
+
 </resources>

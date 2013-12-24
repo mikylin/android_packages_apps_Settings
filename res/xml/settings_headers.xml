@@ -68,6 +68,13 @@
         android:fragment="com.android.settings.HomeSettings"
         android:title="@string/home_settings" />
 
+    <!-- KylinMod Settings -->
+    <header
+        android:id="@+id/kylin_settings"
+        android:fragment="com.android.settings.kylinmod.KylinSettings"
+        android:title="@string/kylin_settings_title"
+        android:icon="@drawable/ic_kylin_settings" />
+
     <!-- Lock screen -->
     <header
         android:id="@+id/lock_screen_settings"

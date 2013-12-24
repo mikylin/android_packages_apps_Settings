@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod project
+* Copyright (C) 2014 The KylinMod Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.kylinmod;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.UserHandle;
+import android.os.UserManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -32,9 +34,9 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class SystemUiSettings extends SettingsPreferenceFragment  implements
+public class PowerMenu extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "SystemSettings";
+    private static final String TAG = "PowerMenu";
 
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
@@ -48,7 +50,23 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.system_ui_settings);
+        addPreferencesFromResource(R.xml.power_menu_settings);
+		
+        final ContentResolver resolver = getContentResolver();
+
+        // Only enable expanded desktop item if expanded desktop support is also enabled
+        findPreference(Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED).setEnabled(
+                Settings.System.getInt(resolver, Settings.System.EXPANDED_DESKTOP_STYLE, 0) != 0);
+
+        // Only enable profiles item if System Profiles are also enabled
+        findPreference(Settings.System.POWER_MENU_PROFILES_ENABLED).setEnabled(
+                Settings.System.getInt(resolver, Settings.System.SYSTEM_PROFILES_ENABLED, 1) != 0);
+
+        if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
+            getPreferenceScreen().removePreference(
+                    findPreference(Settings.System.POWER_MENU_USER_ENABLED));
+        }
+		
         PreferenceScreen prefScreen = getPreferenceScreen();
 
         // Expanded desktop

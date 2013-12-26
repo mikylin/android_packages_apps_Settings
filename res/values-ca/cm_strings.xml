@@ -43,7 +43,7 @@
     <string name="start_time_title">Inici</string>
     <string name="end_time_title">Fi</string>
     <string name="device_hostname">Hostname del dipositiu</string>
-    <string name="mod_version">CyanogenMod versió</string>
+    <string name="mod_version">KylinMod versió</string>
     <string name="mod_version_default">Desconegut</string>
     <string name="build_date">Data d\'elaboració</string>
     <string name="cpu_info">CPU</string>
@@ -476,8 +476,8 @@
     <string name="headset_connect_player_title">Llança app de la música</string>
     <string name="headset_connect_player_summary">Llança l\'app de música predeterminada quan es connecten els auriculars</string>
     <string name="safe_headset_volume_title">Volum dels auriculars segur</string>
-    <string name="cyanogenmod_waiver_title">Renúncia</string>
-    <string name="cyanogenmod_waiver_body">Canviar aquest ajust podria anar en contra del teu país o les lleis nacionals.\n\nSeleccionant \'OK\', declares conèixer aquesta alerta i renuncies, i alliberes a CyanogenMod i els seus contribuïdors de totes les responsabilitat legals.</string>
+    <string name="kylinmod_waiver_title">Renúncia</string>
+    <string name="kylinmod_waiver_body">Canviar aquest ajust podria anar en contra del teu país o les lleis nacionals.\n\nSeleccionant \'OK\', declares conèixer aquesta alerta i renuncies, i alliberes a KylinMod i els seus contribuïdors de totes les responsabilitat legals.</string>
     <string name="auto_brightness_setup_title">Brillantor automàtica</string>
     <string name="auto_brightness_adjustment_title">Ajust de la brillantor</string>
     <string name="auto_brightness_twilight_adjustment">Ajusta a l\'alba i a la posta de sol</string>
@@ -649,12 +649,10 @@ Hi ha disponibles opcions adicionals apretant llargament sobre la línia. Selecc
     <string name="whisperpush_identitykey_title">Revisa les claus d\'identitat</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Dades:</xliff:g></string>
     <string name="custom_runtime_warning_title">Avís</string>
-    <string name="custom_runtime_warning_message">Cyanogenmod no dóna suport a ART. Aquest ajustament està inclòs només per experimentar i té potencial per causar inestabilitats, crashes, pèrdua de dades o pot impedir l\'arrancada adequada del teu dispositiu. Visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; per a més informació.&lt;br/&gt;&lt;br/&gt;Et demanem que no envïis informes d\'error si tens activada ART com la teva runtime.&lt;br/&gt;&lt;br/&gt;Estàs segur que vols reiniciar per canviar la runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">KylinMod no dóna suport a ART. Aquest ajustament està inclòs només per experimentar i té potencial per causar inestabilitats, crashes, pèrdua de dades o pot impedir l\'arrancada adequada del teu dispositiu. Visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; per a més informació.&lt;br/&gt;&lt;br/&gt;Et demanem que no envïis informes d\'error si tens activada ART com la teva runtime.&lt;br/&gt;&lt;br/&gt;Estàs segur que vols reiniciar per canviar la runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="gps_download_data_wifi_only">Descarrega les dades de GPS assistit només amb xarxes Wi-Fi</string>
     <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
     <string name="menu_stats_reset">Reinicia</string>
-    <string name="cmlicense_title">Llicència CyanogenMod</string>
-    <string name="settings_cmlicense_activity_title">Llicència CyanogenMod</string>
     <string name="settings_cmlicense_activity_unreachable">No tens connexió de dades. Per veure aquesta informació ara, ves a %s des d\'un ordenador connectat a internet.</string>
 </resources>

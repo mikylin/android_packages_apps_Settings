@@ -174,8 +174,8 @@
   <string name="lockscreen_enable_widgets_title">วิดเจ็ทบนหน้าจอล็อค</string>
   <string name="lockscreen_enable_widgets_summary">เพิ่มวิดเจ็ทไป</string>
   <string name="safe_headset_volume_title">ระดับเสียงปลอดภัยต่อชุดหูฟัง</string>
-  <string name="cyanogenmod_waiver_title">สละสิทธิ</string>
-  <string name="cyanogenmod_waiver_body">การเปลี่ยนการตั้งค่านี้อาจขัดต่อกฎหมายของรัฐหรือประเทศของคุณ\n\nในการเลือก \'ตกลง\' ด้านล่าง,ทีมงาน CyanogenMod และผู้ร่วมสมทบจะไม่ขอรับผิดชอบภาระทางกฎหมายทั้งหมด</string>
+  <string name="kylinmod_waiver_title">สละสิทธิ</string>
+  <string name="kylinmod_waiver_body">การเปลี่ยนการตั้งค่านี้อาจขัดต่อกฎหมายของรัฐหรือประเทศของคุณ\n\nในการเลือก \'ตกลง\' ด้านล่าง,ทีมงาน KylinMod และผู้ร่วมสมทบจะไม่ขอรับผิดชอบภาระทางกฎหมายทั้งหมด</string>
   <string name="quick_settings_panel_title">แผงตั้งค่า</string>
   <string name="title_static_tiles">ไทต์คงที่</string>
   <string name="tile_picker_title">ไทต์และรูปแบบ</string>
@@ -302,7 +302,7 @@
   <string name="quiet_hours_active_to">ถึง</string>
   <string name="start_time_title">เริ่มต้น</string>
   <string name="end_time_title">สิ้นสุด</string>
-  <string name="mod_version">รุ่นของ CyanogenMod</string>
+  <string name="mod_version">รุ่นของ KylinMod</string>
   <string name="mod_version_default">ไม่ทราบ</string>
   <string name="build_date">วันที่บิวด์</string>
   <string name="cpu_info">หน่วยประมวลผล</string>
@@ -580,7 +580,5 @@
   <string name="battery_info_status_charging_dock_ac">(แท่นAC)</string>
   <string name="battery_info_status_charging_dock_usb">(แท่นUSB)</string>
   <string name="menu_stats_reset">รีเซ็ต</string>
-  <string name="cmlicense_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">เกี่ยวกับกฎหมาย CyanogenMod</string>
   <string name="settings_cmlicense_activity_unreachable">คุณไม่มีการเชื่อมต่ออินเตอร์เน็ต, เพื่อดูข้อมูลเดียวนี้,ไปยัง %s จากคอมพิวเตอร์ที่เชื่อมต่ออินเตอร์เน็ต</string>
 </resources>

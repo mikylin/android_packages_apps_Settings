@@ -211,8 +211,8 @@
     <string name="lockscreen_maximize_widgets_title">Massimizza widget</string>
     <string name="lockscreen_maximize_widgets_summary">Espandi i widget quando lo schermo viene acceso</string>
     <string name="safe_headset_volume_title">Volume sicurezza cuffie</string>
-    <string name="cyanogenmod_waiver_title">Manleva</string>
-    <string name="cyanogenmod_waiver_body">Cambiare questa impostazione può andare contro le leggi del tuo stato/governo.\n\nPremendo \'OK\' più sotto, accetti quanto riportato in questo avviso, e dichiari di esonerare e sollevare CyanogenMod e i suoi collaboratori da ogni responsabilità civile e penale.</string>
+    <string name="kylinmod_waiver_title">Manleva</string>
+    <string name="kylinmod_waiver_body">Cambiare questa impostazione può andare contro le leggi del tuo stato/governo.\n\nPremendo \'OK\' più sotto, accetti quanto riportato in questo avviso, e dichiari di esonerare e sollevare KylinMod e i suoi collaboratori da ogni responsabilità civile e penale.</string>
     <string name="quick_settings_panel_title">Pannello Impostazioni rapide</string>
     <string name="title_static_tiles">Tile statici</string>
     <string name="tile_picker_title">Tile e disposizione</string>
@@ -359,7 +359,7 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' cancella la riga selezionata
     <string name="quiet_hours_active_to">alle</string>
     <string name="start_time_title">Inizio</string>
     <string name="end_time_title">Fine</string>
-    <string name="mod_version">Versione CyanogenMod</string>
+    <string name="mod_version">Versione KylinMod</string>
     <string name="mod_version_default">Sconoscito</string>
     <string name="build_date">Data build</string>
     <string name="cpu_info">CPU</string>
@@ -647,7 +647,5 @@ inserire punti di controllo aggiuntivi. \'Rimuovi\' cancella la riga selezionata
     <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
     <string name="menu_stats_reset">Reimposta</string>
-    <string name="cmlicense_title">Note legali CyanogenMod</string>
-    <string name="settings_cmlicense_activity_title">Note legali CyanogenMod</string>
     <string name="settings_cmlicense_activity_unreachable">Non disponi di una connessione dati. Per visualizzare queste informazioni ora, visita %s da un qualsiasi computer connesso a Internet.</string>
 </resources>

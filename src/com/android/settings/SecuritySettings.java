@@ -420,6 +420,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 appCategory.removePreference(mBlacklist);
                 appCategory.removePreference(mSmsSecurityCheck);
             }
+        }
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         if (mNotificationAccess != null) {

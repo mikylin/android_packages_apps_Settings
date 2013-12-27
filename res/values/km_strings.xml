@@ -28,8 +28,11 @@
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
 
     <!-- show network speed -->
-    <string name="show_network_speed_title">Network speed</string>
+    <string name="show_network_speed_title">Status bar network speed</string>
     <string name="show_network_speed_summary">Show network speed in status bar</string>
+    <string name="status_bar_traffic_style_hidden">hide</string>
+    <string name="status_bar_traffic_style_rx">Show only download speed</string>
+    <string name="status_bar_traffic_style_rxtx">Display upload and download speed</string>
 
     <!-- KylinMod Settings -->
     <string name="kylin_settings_title">KylinMod settings</string>

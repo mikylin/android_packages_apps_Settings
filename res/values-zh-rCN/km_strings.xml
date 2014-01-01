@@ -150,5 +150,13 @@
     <string name="ad_pocket_mode_off">关闭</string>
     <string name="ad_pocket_mode_notifications">仅通知</string>
     <string name="ad_pocket_mode_always">始终</string>
+
+    <!-- Cool dark themes -->
+    <string name="dark_theme_settings_title">酷黑主题</string>
+    <string name="theme_auto_mode_title">切换主题</string>
+    <string name="theme_auto_mode_off">手动</string>
+    <string name="theme_auto_mode_lightsensor">按光照的条件变化</string>
+    <string name="theme_auto_mode_twilight">白天</string>
+    <string name="theme_auto_switch_mode_error">自动光照条件的变化模式被启用。且不能手动切换了。</string>
 	
 </resources>

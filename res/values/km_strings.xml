@@ -177,4 +177,12 @@
     <string name="ad_pocket_mode_notifications">Notifications only</string>
     <string name="ad_pocket_mode_always">Always</string>
 
+    <!-- Cool dark themes -->
+    <string name="dark_theme_settings_title">Cool dark theme</string>
+    <string name="theme_auto_mode_title">Switch theme</string>
+    <string name="theme_auto_mode_off">Manual</string>
+    <string name="theme_auto_mode_lightsensor">On light condition change</string>
+    <string name="theme_auto_mode_twilight">On daytime</string>
+    <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
+
 </resources>

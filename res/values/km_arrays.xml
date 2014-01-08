@@ -16,6 +16,19 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Cool dark themes -->
+    <string-array name="theme_auto_mode_entries">
+        <item>@string/theme_auto_mode_off</item>
+        <item>@string/theme_auto_mode_lightsensor</item>
+        <item>@string/theme_auto_mode_twilight</item>
+    </string-array>
+
+    <string-array name="theme_auto_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Listview animation -->
     <string-array name="listview_animation_entries">
         <item>@string/listview_off</item>

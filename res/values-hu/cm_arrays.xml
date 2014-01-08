@@ -14,31 +14,31 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="wifi_countrycode_entries">
-        <item>Estados Unidos</item>
-        <item>Canadá, Taiwán</item>
-        <item>Alemania</item>
-        <item>Europa</item>
-        <item>Japón, Rusia</item>
-        <item>Australia</item>
-        <item>China</item>
-        <item>Corea</item>
-        <item>Turquía</item>
-        <item>Singapur</item>
-        <item>Brasil</item>
+        <item>Amerikai Egyesült Államok</item>
+        <item>Kanada, Tajvan</item>
+        <item>Németország</item>
+        <item>Európa</item>
+        <item>Japán, Oroszország</item>
+        <item>Ausztrália</item>
+        <item>Kína</item>
+        <item>Korea</item>
+        <item>Törökország</item>
+        <item>Szingapúr</item>
+        <item>Brazília</item>
     </string-array>
     <string-array name="profile_entries">
-        <item>Activo</item>
-        <item>Inactivo</item>
-        <item>No sobrescribir</item>
+        <item>Be</item>
+        <item>Ki</item>
+        <item>Nincs felülbírálás</item>
     </string-array>
     <string-array name="profile_connection_entries">
-        <item>Deshabilitado</item>
-        <item>Habilitado</item>
+        <item>Letiltva</item>
+        <item>Engedélyezve</item>
     </string-array>
     <string-array name="entries_screentimeout_widget">
-        <item>15s | 1m | 5m</item>
-        <item>30s | 2m | 5m</item>
+        <item>15mp | 1p | 5p</item>
+        <item>30mp | 2p | 5p</item>
     </string-array>
 </resources>

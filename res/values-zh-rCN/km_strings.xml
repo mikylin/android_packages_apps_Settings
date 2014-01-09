@@ -158,5 +158,8 @@
     <string name="theme_auto_mode_lightsensor">按光照的条件变化</string>
     <string name="theme_auto_mode_twilight">白天</string>
     <string name="theme_auto_switch_mode_error">自动光照条件的变化模式被启用。且不能手动切换了。</string>
-	
+
+    <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">上午/下午样式</string>
+
 </resources>

@@ -47,7 +47,13 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
+    private static final String STATUS_BAR_BATTERY_SHOW_PERCENT = "status_bar_battery_show_percent";
+
+    private static final String STATUS_BAR_STYLE_HIDDEN = "4";
+    private static final String STATUS_BAR_STYLE_TEXT = "6";
+
     private ListPreference mStatusBarBattery;
+    private SystemSettingCheckBoxPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarCmSignal;
 
     private ListPreference mStatusBarAmPm;
@@ -90,7 +96,9 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mCustomStatusBarCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
 
-        mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
+        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY);
+        mStatusBarBatteryShowPercent =
+                (SystemSettingCheckBoxPreference) findPreference(STATUS_BAR_BATTERY_SHOW_PERCENT);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
 
         CheckBoxPreference statusBarBrightnessControl = (CheckBoxPreference)
@@ -123,6 +131,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         if (Utils.isTablet(getActivity())) {
             prefSet.removePreference(statusBarBrightnessControl);
         }
+
+        enableStatusBarBatteryDependents(mStatusBarBattery.getValue());
     }
 
     private void updateCustomLabelTextSummary() {
@@ -144,6 +154,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             int index = mStatusBarBattery.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_BATTERY, batteryStyle);
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
+
+            enableStatusBarBatteryDependents((String)newValue);
             return true;
         } else if (preference == mStatusBarTraffic) {
             int trafficStyle = Integer.valueOf((String) newValue);
@@ -200,5 +212,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             alert.show();
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void enableStatusBarBatteryDependents(String value) {
+        boolean enabled = !(value.equals(STATUS_BAR_STYLE_TEXT)
+                || value.equals(STATUS_BAR_STYLE_HIDDEN));
+        mStatusBarBatteryShowPercent.setEnabled(enabled);
     }
 }

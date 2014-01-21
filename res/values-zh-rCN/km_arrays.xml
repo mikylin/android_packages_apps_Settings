@@ -22,4 +22,17 @@
         <item>无</item>
     </string-array>
 
+    <!-- App sidebar -->
+    <string-array name="tab_position_entries">
+        <item>顶部</item>
+        <item>中间</item>
+        <item>底部</item>
+    </string-array>
+
+    <string-array name="tab_size_entries">
+        <item>小</item>
+        <item>中</item>
+        <item>打</item>
+    </string-array>
+
 </resources>

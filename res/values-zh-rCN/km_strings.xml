@@ -162,4 +162,34 @@
     <!-- AP/PM Indicator -->
     <string name="status_bar_am_pm_title">上午/下午样式</string>
 
+    <!-- App sidebar -->
+    <string name="app_sidebar_title">侧边栏</string>
+    <string name="app_sidebar_enable_title">启用侧边栏</string>
+    <string name="app_sidebar_enable_summaryOn">侧边栏已开启</string>
+    <string name="app_sidebar_enable_summaryOff">侧边栏已取消</string>
+    <string name="app_sidebar_setup_items_title">设置侧边栏的内容</string>
+    <string name="app_sidebar_setup_items_summary">在侧边栏中添加，移除和调整项目位置</string>
+    <string name="app_sidebar_transparency_title">侧边栏透明度</string>
+    <string name="app_sidebar_transparency_summary">调整侧边栏透明度的百分比</string>
+    <string name="app_sidebar_position_title">侧边栏位置</string>
+    <string name="app_sidebar_position_summary">在屏幕的左侧或右侧放置侧边栏</string>
+    <string name="app_sidebar_position_left">左</string>
+    <string name="app_sidebar_position_right">右</string>
+    <string name="app_sidebar_hide_labels_title">隐藏图标标签</string>
+    <string name="app_sidebar_hide_labels_summary">隐藏侧边栏图标标签</string>
+    <string name="tab_category">可见标签</string>
+    <string name="use_tab_title">显示选项条</string>
+    <string name="use_tab_summary">当触摸时，它会显示自定义的侧边栏.同时显示可见的选项条在旁边.</string>
+    <string name="tab_position_title">标签位置</string>
+    <string name="tab_position_summary">显示的标签,在屏幕的一侧上的顶端、中间或底部.</string>
+    <string name="tab_size_title">标签大小</string>
+    <string name="tab_size_summary">更改可见选项条的大小.</string>
+    <string name="trigger_category">触发区</string>
+    <string name="trigger_width_title">触发宽度</string>
+    <string name="trigger_width_summary">调整触发区域的宽度</string>
+    <string name="trigger_top_title">触发的位置</string>
+    <string name="trigger_top_summary">调整现在触发区域的垂直位置</string>
+    <string name="trigger_bottom_title">触发的高度</string>
+    <string name="trigger_bottom_summary">调整触发区域的高度</string>
+
 </resources>

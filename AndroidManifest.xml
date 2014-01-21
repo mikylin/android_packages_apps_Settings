@@ -1688,6 +1688,8 @@
 
         <activity android:name=".kylinmod.themes.ThemeSettings" />
 
+        <activity android:name=".kylinmod.AppSidebar" />
+
         <activity android:name="Settings$KylinSettingsActivity"
                 android:label="@string/kylin_settings_title"
                 android:taskAffinity=""

@@ -246,4 +246,17 @@
     <string name="halo_msgbox_animation_none">无</string>
     <string name="halo_msgbox_animation_flip">翻转</string>
 
+    <!-- Powersaver settings -->
+    <string name="power_saver_settings_title">节能程序</string>
+    <string name="power_saver_settings_summary">优化电池寿命</string>
+    <string name="power_saver_toggles_mobile_title">移动网络</string>
+    <string name="power_saver_toggles_location_title">位置</string>
+    <string name="power_saver_toggles_performance_title">性能</string>
+    <string name="power_saver_toggles_gps_title">定位服务</string>
+    <string name="power_saver_toggles_gps_summary">屏幕关闭后将禁用GPS定位服务</string>
+    <string name="power_saver_toggles_mobile_data_title">数据连接</string>
+    <string name="power_saver_toggles_mobile_data_summary">屏幕关闭后将禁用数据连接</string>
+    <string name="power_saver_toggles_cpu_title">处理器性能</string>
+    <string name="power_saver_toggles_cpu_summary">屏幕关闭后将切换到节能模式</string>
+
 </resources>

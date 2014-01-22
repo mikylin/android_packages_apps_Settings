@@ -40,6 +40,14 @@
 
     <!-- Animation Options -->
     <string name="animation_options_title">Animation options</string>
+
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_settings_title">Screen animation</string>
+    <string name="screen_off_animation_title">Screen-off animation</string>
+    <string name="screen_off_animation_fadeout">Fade out</string>
+    <string name="screen_off_animation_electronbeam">Electron beam</string>
+    <string name="screen_off_animation_scaledown">Scale down</string>
+    <string name="screen_off_animation_turnoff">Turn off</string>
 	
     <!-- ListView animation -->
     <string name="listview_animation_settings_title">ListView animation settings</string>

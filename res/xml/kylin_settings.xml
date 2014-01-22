@@ -64,6 +64,13 @@
         android:icon="@drawable/ic_kylin_active_display"
         android:fragment="com.android.settings.kylinmod.ActiveDisplaySettings" />
 
+    <!-- HALO -->
+    <PreferenceScreen
+        android:id="@+id/halo_settings"
+        android:title="@string/halo_title"
+        android:icon="@drawable/ic_kylin_halo"
+        android:fragment="com.android.settings.kylinmod.Halo" />
+
     <!-- Navigation -->
     <PreferenceScreen
         android:id="@+id/navigation_bar_settings"

@@ -31,7 +31,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import com.android.settings.R;
 
-public class SeekBarPreferenceChOS extends Preference implements OnSeekBarChangeListener {
+public class SeekBarPreference extends Preference implements OnSeekBarChangeListener {
     
     private final String TAG = getClass().getName();
     
@@ -50,12 +50,12 @@ public class SeekBarPreferenceChOS extends Preference implements OnSeekBarChange
     
     private TextView mStatusText;
 
-    public SeekBarPreferenceChOS(Context context, AttributeSet attrs) {
+    public SeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         initPreference(context, attrs);
     }
 
-    public SeekBarPreferenceChOS(Context context, AttributeSet attrs, int defStyle) {
+    public SeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initPreference(context, attrs);
     }
@@ -69,7 +69,7 @@ public class SeekBarPreferenceChOS extends Preference implements OnSeekBarChange
     
     private void setValuesFromXml(AttributeSet attrs) {
         mMaxValue = attrs.getAttributeIntValue(ANDROIDNS, "max", 100);
-        mMinValue = attrs.getAttributeIntValue(SETTINGS, "minAD", 0);
+        mMinValue = attrs.getAttributeIntValue(SETTINGS, "min", 0);
         
         mUnitsLeft = getAttributeStringValue(attrs, SETTINGS, "unitsLeft", "");
         String units = getAttributeStringValue(attrs, SETTINGS, "units", "");

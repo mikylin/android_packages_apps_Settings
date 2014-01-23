@@ -25,6 +25,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -50,6 +51,7 @@ public class AnimationOptions extends SettingsPreferenceFragment  implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ContentResolver resolver = getActivity().getContentResolver();
 
         addPreferencesFromResource(R.xml.animation_options);
         PreferenceScreen prefScreen = getPreferenceScreen();
@@ -69,6 +71,7 @@ public class AnimationOptions extends SettingsPreferenceFragment  implements
         mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
         mListViewInterpolator.setOnPreferenceChangeListener(this);
 
+        // Screen Off Animation
         mScreenOffAnimationPreference = (ListPreference) findPreference(KEY_SCREEN_OFF_ANIMATION);
         final int currentAnimation = Settings.System.getInt(resolver, SCREEN_OFF_ANIMATION,
                 1 /* CRT-off */);
@@ -97,6 +100,7 @@ public class AnimationOptions extends SettingsPreferenceFragment  implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getContentResolver();
+        final String key = preference.getKey();
         if (preference == mListViewAnimation) {
             int listviewanimation = Integer.valueOf((String) objValue);
             int index = mListViewAnimation.findIndexOfValue((String) objValue);
@@ -111,7 +115,6 @@ public class AnimationOptions extends SettingsPreferenceFragment  implements
                     listviewinterpolator);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
             return true; 
-        }
         } else if (KEY_SCREEN_OFF_ANIMATION.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {

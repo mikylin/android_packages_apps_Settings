@@ -46,17 +46,21 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
     // Force show navigation bar
     private static final String KEY_FORCE_SHOW_NAVIGATION_BAR = "force_show_navigation_bar";
 
+    // Custom Navigation Bar Height Key
+    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
-    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
     // Force show navigation bar
     private CheckBoxPreference mForceShowNavigationBarPref;
 
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
+
+    // Custom Navigation Bar Height Preference
     private ListPreference mNavButtonsHeight;
 
     @Override
@@ -65,6 +69,15 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.navbar_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // Custom Navigation Bar Height
+        mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
+        mNavButtonsHeight.setOnPreferenceChangeListener(this);
+
+        int statusNavButtonsHeight = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
+        mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
         mForceShowNavigationBarPref =
                 (CheckBoxPreference) findPreference(KEY_FORCE_SHOW_NAVIGATION_BAR);
@@ -105,14 +118,6 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
         }
-        //Navigation Bar Height
-        mNavButtonsHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
-        mNavButtonsHeight.setOnPreferenceChangeListener(this);
-
-        int statusNavButtonsHeight = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
-        mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
-        mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -134,7 +139,7 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.NAVIGATION_BAR_HEIGHT, 
                     Integer.valueOf((String) objValue));
             mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntries()[index]);
-            return true;
+            return true; 
         }
 
         return false;

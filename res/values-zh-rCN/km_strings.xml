@@ -36,7 +36,6 @@
 
     <!-- KylinMod Settings -->
     <string name="kylin_settings_title">麒麟控</string>
-    <string name="power_menu_expanded_desktop_settings">扩展桌面设置</string>
 
     <!-- Development shortcut -->
     <string name="development_shortcut_title">开发快捷方式</string>

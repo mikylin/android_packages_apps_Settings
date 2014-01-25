@@ -20,38 +20,41 @@
     android:title="@string/navigation_bar_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Navigation bar -->
-    <CheckBoxPreference
-        android:key="force_show_navigation_bar"
-        android:title="@string/force_show_navigation_bar_title"
-        android:summary="@string/force_show_navigation_bar_summary"
-        android:defaultValue="false" />
-
-    <PreferenceScreen
+    <PreferenceCategory
         android:key="navigation_bar"
-        android:fragment="com.android.settings.cyanogenmod.NavBar"
-        android:title="@string/navigation_bar_edit_title"
-        android:summary="@string/navigation_bar_edit_summary" />
+        android:title="@string/navigation_bar_category" >
 
-	<ListPreference
-        android:key="navigation_bar_height"
-        android:dialogTitle="@string/navigation_bar_height"
-        android:title="@string/navigation_bar_height"
-        android:entries="@array/navigation_bar_height_entries"
-        android:entryValues="@array/navigation_bar_height_values"
-        android:defaultValue="48"
-        android:persistent="false" />
+        <CheckBoxPreference
+            android:key="force_show_navigation_bar"
+            android:title="@string/force_show_navigation_bar_title"
+            android:summary="@string/force_show_navigation_bar_summary"
+            android:defaultValue="false" />
 
-    <PreferenceScreen
-        android:key="navigation_ring"
-        android:fragment="com.android.settings.cyanogenmod.NavRing"
-        android:title="@string/navigation_ring_title"
-        android:summary="@string/navigation_ring_summary" />
+        <ListPreference
+            android:key="navigation_bar_height"
+            android:dialogTitle="@string/navigation_bar_height"
+            android:title="@string/navigation_bar_height"
+            android:entries="@array/navigation_bar_height_entries"
+            android:entryValues="@array/navigation_bar_height_values"
+            android:defaultValue="48"
+            android:persistent="false" />
+
+        <PreferenceScreen
+            android:key="navigation_bar"
+            android:fragment="com.android.settings.cyanogenmod.NavBar"
+            android:title="@string/navigation_bar_title" />
+
+        <PreferenceScreen
+            android:key="navigation_ring"
+            android:fragment="com.android.settings.cyanogenmod.NavRing"
+            android:title="@string/navigation_ring_title" />
+
+    </PreferenceCategory>
 
     <!-- Expanded desktop -->
     <ListPreference
             android:key="expanded_desktop"
-            android:title="@string/power_menu_expanded_desktop_settings"
+            android:title="@string/power_menu_expanded_desktop"
             android:entries="@array/expanded_desktop_entries"
             android:entryValues="@array/expanded_desktop_values"
             android:persistent="false" />

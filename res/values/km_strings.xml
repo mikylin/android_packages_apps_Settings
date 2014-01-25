@@ -36,7 +36,6 @@
 
     <!-- KylinMod Settings -->
     <string name="kylin_settings_title">KylinMod settings</string>
-    <string name="power_menu_expanded_desktop_settings">Expanded desktop settings</string>
 
     <!-- Animation Options -->
     <string name="animation_options_title">Animation options</string>

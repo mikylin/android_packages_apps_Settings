@@ -306,20 +306,6 @@
   <string name="build_date">วันที่บิวด์</string>
   <string name="cpu_info">หน่วยประมวลผล</string>
   <string name="mem_info">หน่วยความจำชั่วคราว</string>
-  <string name="anonymous_statistics_title">สถิติของ CyanogenMod </string>
-  <string name="anonymous_statistics_summary">ช่วยทำให้ CyanogenMod ดีขึ้นโดยการส่งรายงานสถิติแบบไม่ระบุตัวตน</string>
-  <string name="anonymous_statistics_warning_title">เกี่ยวกับ</string>
-  <string name="anonymous_statistics_warning">การส่งสถิติแบบไม่ระบุตัวตนไปยัง CyanogenMod จะอนุญาตให้ส่งข้อมูลที่ไม่เป็นส่วนตัวไปยังนักพัฒนาของ CyanogenMod เพื่อติดตามการติดตั้งบนอุปกรณ์ต่างๆ ข้อมูลที่ถูกส่งรวมไปถึงตัวระบุที่ไม่ซ้ำกัน\n\nซึ่งไม่ได้ส่งข้อมูลที่เป็นส่วนตัวของคุณ และจะส่งข้อมูลทุกครั้งที่เริ่มระบบ\n\n แตะ \"แสดงตัวอย่างข้อมูล\" เพื่อดูตัวอย่างข้อมูลที่ถูกส่ง</string>
-  <string name="enable_reporting_title">เปิดให้รายงาน</string>
-  <string name="preview_data_title">แสดงตัวอย่างข้อมูล</string>
-  <string name="view_stats_title">ดูสถิติ</string>
-  <string name="anonymous_learn_more">เรียนรู้เพิ่มเติม</string>
-  <string name="anonymous_notification_desc">เปิดหรือปิดสถิติของ CyanogenMod</string>
-  <string name="preview_id_title">ตัวระบุที่ไม่ซ้ำกัน</string>
-  <string name="preview_device_title">อุปกรณ์</string>
-  <string name="preview_version_title">รุ่น</string>
-  <string name="preview_country_title">ประเทศ</string>
-  <string name="preview_carrier_title">ผู้ให้บริการ</string>
   <string name="header_category_interface">ลักษณะส่วนบุคคล</string>
   <string name="themes_settings_title">ธีม</string>
   <string name="performance_settings_title">ประสิทธิภาพ</string>
@@ -349,8 +335,6 @@
   <string name="changelog_error">ไม่สามารถโหลดความเปลี่ยนแปลงได้</string>
   <string name="changelog_unknown">ไม่ทราบ</string>
   <string name="changelog_version">รุ่น</string>
-  <string name="cmupdate_settings_title">อัพเดต CyanogenMod</string>
-  <string name="cmupdate_settings_summary">ตรวจสอบ,ดู หรือติดตั้งการอัพเดต</string>
   <string name="advanced_settings_title">ขั้นสูง</string>
   <string name="development_tools_title">เปิดอุปกรณ์ช่วยเหลือ</string>
   <string name="privacy_guard_switch_label">เปิดการป้องกันความเป็นส่วนตัว</string>
@@ -571,10 +555,9 @@
   <string name="whisperpush_registration_summary">สมัคร WhisperPush เพื่อเปิดการเข้ารหัส SMS</string>
   <string name="whisperpush_identitykey_title">วิจารณ์กุญแจระบุตัวตน</string>
   <string name="custom_runtime_warning_title">คำเตือน</string>
-  <string name="custom_runtime_warning_message">Android Runtime หรือ ART ยังไม่ได้รับสนับสนุนจาก CyanogenMod การตั้งค่านี้มีจุดประสงค์เพื่อใช้ในการทดลองและทดสอบเท่านั้นและอาจก่อให้เกิดความไม่เสถียร เกิดข้อผิดพลาด ข้อมูลสูญหาย หรือการบูทเครื่องอาจผิดพลาดได้ สำหรับข้อมูลเพิ่มเติมสามารถอ่านได้ที่ &amp;lt;a href="http://source.android.com/devices/tech/dalvik/art.html"&amp;gt;Introducing ART&amp;lt;/a&amp;gt; &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt; ทางเราขอความร่วมมือท่านที่จะไม่ส่งรายงานข้อผิดพลาดที่เกิดขึ้นถ้าหากคุณเลือกที่จะใช้ ART&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt; คุณแน่ใจหรือไม่ที่จะทำการรีบูทเครื่องและเปลี่ยนรันไทม์จาก <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ไปเป็น <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">Android Runtime หรือ ART ยังไม่ได้รับสนับสนุนจาก KylinMod การตั้งค่านี้มีจุดประสงค์เพื่อใช้ในการทดลองและทดสอบเท่านั้นและอาจก่อให้เกิดความไม่เสถียร เกิดข้อผิดพลาด ข้อมูลสูญหาย หรือการบูทเครื่องอาจผิดพลาดได้ สำหรับข้อมูลเพิ่มเติมสามารถอ่านได้ที่ &amp;lt;a href="http://source.android.com/devices/tech/dalvik/art.html"&amp;gt;Introducing ART&amp;lt;/a&amp;gt; &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt; ทางเราขอความร่วมมือท่านที่จะไม่ส่งรายงานข้อผิดพลาดที่เกิดขึ้นถ้าหากคุณเลือกที่จะใช้ ART&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt; คุณแน่ใจหรือไม่ที่จะทำการรีบูทเครื่องและเปลี่ยนรันไทม์จาก <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> ไปเป็น <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">ดาวน์โหลดข้อมูล GPS ผ่าน Wi-Fi เท่านั้น</string>
   <string name="battery_info_status_charging_dock_ac">(แท่นAC)</string>
   <string name="battery_info_status_charging_dock_usb">(แท่นUSB)</string>
   <string name="menu_stats_reset">รีเซ็ต</string>
-  <string name="settings_cmlicense_activity_unreachable">คุณไม่มีการเชื่อมต่ออินเตอร์เน็ต, เพื่อดูข้อมูลเดียวนี้,ไปยัง %s จากคอมพิวเตอร์ที่เชื่อมต่ออินเตอร์เน็ต</string>
 </resources>

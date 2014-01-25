@@ -506,8 +506,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
                     ((Boolean) objValue).booleanValue() ? 1 : 0);
-        }
-        if (KEY_SCREEN_ANIMATION_STYLE.equals(key)) {
+        } else if (KEY_SCREEN_ANIMATION_STYLE.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
                 Settings.System.putInt(getContentResolver(), SCREEN_ANIMATION_STYLE, value);

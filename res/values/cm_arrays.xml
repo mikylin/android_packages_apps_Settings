@@ -687,4 +687,5 @@
         <item>Device</item>
         <item>@string/app_ops_categories_bootup</item>
     </string-array>
+
 </resources>

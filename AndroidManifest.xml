@@ -1720,6 +1720,24 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/kylin_settings" />
         </activity>
+
+        <!-- Anonymous Statistics -->
+        <receiver android:name="com.android.settings.kmstats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name="com.android.settings.kmstats.ReportingService">
+        </service>
+
         <!-- KylinMod activities End -->	
 
         <!-- CyanogenMod activities Start -->
@@ -1819,6 +1837,15 @@
         <activity android:name=".cyanogenmod.PrivacySettings" />
 
         <!-- CyanogenMod activities End -->
+
+        <!-- AnonymousStats -->
+        <activity android:name="Settings$AnonymousStatsActivity"
+                android:label="@string/anonymous_statistics_title"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:clearTaskOnLaunch="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.kmstats.AnonymousStats" />
+        </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"

@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="kylinmod_waiver_title">Отказ от ответственности</string>
-    <string name="kylinmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете CyanogenMod и всех его разработчиков от любых юридических обязательств.</string>
+    <string name="kylinmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете KylinMod и всех его разработчиков от любых юридических обязательств.</string>
 
     <string name="wifi_disabled_association_rejected">Соединение отклонено</string>
     <string name="wifi_setting_countrycode_title">Код региона Wi-Fi</string>
@@ -684,6 +684,21 @@
     <string name="pref_purgeable_assets_summary">Позволяет освобождать больше памяти путём очистки активов графических элементов (требуется перезагрузка)</string>
     <string name="pref_use_16bpp_alpha_title">16-битная прозрачность</string>
     <string name="pref_use_16bpp_alpha_summary">Увеличенная производительность графической системы, но возможно снижение качества и появление визуальных артефактов (требуется перезагрузка)</string>
+
+    <string name="anonymous_notification_desc">Анонимная статистика KylinMod</string>
+    <string name="anonymous_statistics_title">Отправка статистики</string>
+    <string name="anonymous_statistics_summary">Помогите сделать CM лучше, включив отправку анонимных отчётов</string>
+    <string name="anonymous_statistics_warning_title">Информация об использовании</string>
+    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам KylinMod отслеживать установки на различные устройства. Отсылаемая информацию включает в себя название устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.</string>
+    <string name="anonymous_learn_more">Подробнее</string>
+    <string name="enable_reporting_title">Включить отправку отчётов</string>
+    <string name="preview_data_title">Просмотр отправляемых данных</string>
+    <string name="preview_id_title">Идентификатор</string>
+    <string name="preview_device_title">Устройство</string>
+    <string name="preview_version_title">Версия</string>
+    <string name="preview_country_title">Страна</string>
+    <string name="preview_carrier_title">Оператор</string>
+    <string name="view_stats_title">Просмотр статистики установок</string>
 
     <string name="changelog_title">Список изменений</string>
     <string name="changelog_loading">Загрузка списка изменений\u2026</string>

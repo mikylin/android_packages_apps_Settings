@@ -319,7 +319,7 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
             return false;
         }
     }
- 
+
     public boolean isPackageInstalled(String packageName) {
         if (packageName != null) {
             try {

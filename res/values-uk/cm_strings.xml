@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="kylinmod_waiver_title">Відмова від відповідальності</string>
-    <string name="kylinmod_waiver_body">Зміна цих налаштувань може суперечити законам вашої країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте CyanogenMod і всіх його розробників від будь-яких юридичних зобов’язань.</string>
+    <string name="kylinmod_waiver_body">Зміна цих налаштувань може суперечити законам вашої країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте KylinMod і всіх його розробників від будь-яких юридичних зобов’язань.</string>
 
     <string name="wifi_disabled_association_rejected">З’єднання відхилено</string>
     <string name="wifi_setting_countrycode_title">Код регіону Wi-Fi</string>
@@ -635,6 +635,21 @@
     <string name="pref_purgeable_assets_summary">Звільнити більше пам’яті, коли це необхідно, якщо пам’ять активів бітмапів дозволено скидати (потрібне перезавантаження)</string>
     <string name="pref_use_16bpp_alpha_title">16-бітна прозорість</string>
     <string name="pref_use_16bpp_alpha_summary">Більша продуктивність графічної системи, але можливе зниження якості та поява графічних артефактів (потрібне перезавантаження)</string>
+
+    <string name="anonymous_notification_desc">Анонімна статистика KylinMod</string>
+    <string name="anonymous_statistics_title">Статистика KylinMod</string>
+    <string name="anonymous_statistics_summary">Допоможіть зробити KylinMod кращим, надсилаючи анонімну статистику</string>
+    <string name="anonymous_statistics_warning_title">Про</string>
+    <string name="anonymous_statistics_warning">Анонімні звіти дозволяють розробникам KylinMod відстежувати установки на різні пристрої. Інформація включає в себе назву пристрою, версію прошивки і унікальний ідентифікатор, надсилання якого ніяким чином не шкодить Вашій конфіденційності. Звіт надсилається при кожному завантаженні пристрої.</string>
+    <string name="anonymous_learn_more">Докладніше</string>
+    <string name="enable_reporting_title">Увімкнути надсилання звітів</string>
+    <string name="preview_data_title">Показати дані</string>
+    <string name="preview_id_title">Унікальний ідентифікатор</string>
+    <string name="preview_device_title">Пристрій</string>
+    <string name="preview_version_title">Версія</string>
+    <string name="preview_country_title">Країна</string>
+    <string name="preview_carrier_title">Оператор</string>
+    <string name="view_stats_title">Перегляд статистики встановлень</string>
 
     <string name="changelog_title">Подивитися зміни</string>
     <string name="changelog_loading">Завантажується журнал змін\u2026</string>

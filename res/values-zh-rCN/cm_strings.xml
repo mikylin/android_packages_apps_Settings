@@ -389,6 +389,10 @@
     <string name="power_menu_sound_title">声控面板</string>
     <string name="advanced_settings_title">高级</string>
     <string name="status_bar_title">状态栏</string>
+    <string name="status_bar_battery_cat_title">电池</string>
+    <string name="status_bar_clock_title">时钟</string>
+    <string name="status_bar_signal_title">信号</string>
+    <string name="status_bar_general_title">常规</string>
     <string name="status_bar_show_clock_title">显示时钟</string>
     <string name="status_bar_battery_title">电池状态样式</string>
     <string name="status_bar_style_icon_portrait">竖向图标</string>

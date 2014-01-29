@@ -262,4 +262,21 @@
     <string name="force_show_navigation_bar_title">显示虚拟导航栏</string>
     <string name="force_show_navigation_bar_summary">强制显示虚拟导航栏（需要重启）</string>
 
+    <!-- General strings -->
+    <string name="ok">确认</string>
+    <string name="reset">重置</string>
+    <string name="attention">注意</string>
+    <string name="enabled">启用</string>
+    <string name="default_string">默认</string>
+    <string name="add">添加</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">颜色选择器</string>
+    <string name="press_color_to_apply">选择下面的一个颜色进行设置</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">\#ff000000</string>
+    <string name="set">设置</string>
+
 </resources>

@@ -279,4 +279,28 @@
     <string name="hex_hint">\#ff000000</string>
     <string name="set">设置</string>
 
+    <!-- Recents Ram Bar -->
+    <string name="general_interface_title">常规界面</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="ram_bar">Ram条</string>
+    <string name="ram_bar_note_title">注释</string>
+    <string name="ram_bar_note_summary">该Ram条显示实际是安卓内存（RAM）占用的利用率.请注意,有缓存的应用可以帮助你的设备更快的打开应用程序.有关如何安卓内存（RAM）占用的管理工作进一步解释，检查帮助菜单.</string>
+    <string name="ram_bar_mode_title">Ram条的模式</string>
+    <string name="ram_bar_mode_dialog_title">在最近项目里显示内存条</string>
+    <string name="ram_bar_none">无</string>
+    <string name="ram_bar_apps">应用程序</string>
+    <string name="ram_bar_cache">应用程序+缓存</string>
+    <string name="ram_bar_other">应用程序+缓存+其他</string>
+    <string name="ram_bar_style_cat">Ram条的颜色风格</string>
+    <string name="ram_bar_color_app_mem_color">应用程序占用Ram的颜色</string>
+    <string name="ram_bar_color_cache_mem_color">缓存占用Ram的颜色</string>
+    <string name="ram_bar_color_total_mem_color">其他占用Ram的颜色</string>
+    <string name="ram_bar_color_enabled">启用</string>
+    <string name="ram_bar_color_disabled">取消</string>
+    <string name="ram_bar_button_help">帮助</string>
+    <string name="ram_bar_button_reset">重置颜色</string>
+    <string name="ram_bar_reset">重置</string>
+    <string name="ram_bar_reset_message">重置Ram条的颜色风格为默认?</string>
+
 </resources>

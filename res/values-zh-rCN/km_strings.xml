@@ -303,4 +303,8 @@
     <string name="ram_bar_reset">重置</string>
     <string name="ram_bar_reset_message">重置Ram条的颜色风格为默认?</string>
 
+    <!-- Enable power menu -->
+    <string name="lockscreen_enable_power_menu_title">启用电源菜单</string>
+    <string name="lockscreen_enable_power_menu_summary">当屏幕被锁定时,可以打开电源菜单.</string>
+
 </resources>

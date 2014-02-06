@@ -99,6 +99,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
     private static final String CATEGORY_ADDITIONAL = "additional_options";
 
+    // KylinMod Additions
+    private static final String KEY_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
+
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
 
@@ -120,7 +123,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
-
+    private CheckBoxPreference mEnablePowerMenu;
 
     private Preference mNotificationAccess;
 
@@ -303,6 +306,12 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 additionalPrefs.removePreference(cameraUnlock);
             }
         }
+
+        // Enable / disable power menu on lockscreen
+        mEnablePowerMenu = (CheckBoxPreference) findPreference(KEY_ENABLE_POWER_MENU);
+        mEnablePowerMenu.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1) == 1);
+        mEnablePowerMenu.setOnPreferenceChangeListener(this);
 
         // biometric weak liveliness
         mBiometricWeakLiveliness =
@@ -794,6 +803,10 @@ public class SecuritySettings extends RestrictedSettingsFragment
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, smsSecurityCheck);
             updateSmsSecuritySummary(smsSecurityCheck);
+        } else if (preference == mEnablePowerMenu) {
+            boolean newValue = (Boolean) value;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, newValue ? 1 : 0);
         }
         return true;
     }

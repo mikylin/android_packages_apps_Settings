@@ -307,4 +307,8 @@
     <string name="lockscreen_enable_power_menu_title">启用电源菜单</string>
     <string name="lockscreen_enable_power_menu_summary">当屏幕被锁定时,可以打开电源菜单.</string>
 
+    <!-- BlackList Ext -->
+    <string name="blacklist_all_numbers_title">所有号码</string>
+    <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>
+
 </resources>

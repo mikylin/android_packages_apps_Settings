@@ -34,7 +34,7 @@
     <string name="quiet_hours_ringer">手机铃声</string>
     <string name="quiet_hours_mute">静音提醒</string>
     <string name="quiet_hours_system">禁用系统声音</string>
-    <string name="quiet_hours_still">禁用震动</string>
+    <string name="quiet_hours_still">禁用振动</string>
     <string name="quiet_hours_dim">禁用指示灯</string>
     <string name="quiet_hours_haptic">禁用触控反馈</string>
     <string name="quiet_hours_active_from">从</string>
@@ -126,7 +126,7 @@
     <string name="sound_mode">提醒模式</string>
     <string name="ringer_mode">铃声模式</string>
     <string name="lights_mode">灯光模式</string>
-    <string name="vibrate_mode">震动模式</string>
+    <string name="vibrate_mode">振动模式</string>
     <string name="choose_soundtone">选择提醒音</string>
     <string name="choose_ringtone">选择铃声</string>
     <string name="soundtone_title">提醒音</string>
@@ -224,6 +224,18 @@
     <string name="icon_picker_search">搜索</string>
     <string name="icon_picker_sms">短信</string>
     <string name="icon_picker_twitter">Twitter</string>
+    <string name="lockscreen_buttons_title">按键行为</string>
+    <string name="lockscreen_buttons_summary">查看或改变在锁屏界面上按键的行为</string>
+    <string name="lockscreen_long_press_back_title">长按后退键</string>
+    <string name="lockscreen_long_press_home_title">长按 Home 键</string>
+    <string name="lockscreen_long_press_menu_title">长按菜单键</string>
+    <string name="lockscreen_buttons_no_action">无作用</string>
+    <string name="lockscreen_buttons_flashlight">手电筒</string>
+    <string name="lockscreen_buttons_next">下一首乐曲</string>
+    <string name="lockscreen_buttons_previous">上一首乐曲</string>
+    <string name="lockscreen_buttons_playpause">播放/暂停音乐</string>
+    <string name="lockscreen_buttons_toggle_sound">切换声音模式</string>
+    <string name="lockscreen_buttons_sleep">锁屏</string>
     <string name="icon_picker_title">选择图标来源</string>
     <string name="icon_picker_system_icons_title">系统图标</string>
     <string name="icon_picker_gallery_title">图库</string>
@@ -320,15 +332,15 @@
     <string name="ring_mode_vibrate">振动</string>
     <string name="ring_mode_mute">静音</string>
     <string name="volume_overlay_title">声控面板风格</string>
-    <string name="volume_overlay_single">单独</string>
-    <string name="volume_overlay_expandable">扩展</string>
-    <string name="volume_overlay_expanded">完整</string>
+    <string name="volume_overlay_single">单行</string>
+    <string name="volume_overlay_expandable">可展开</string>
+    <string name="volume_overlay_expanded">完全展开</string>
     <string name="volume_overlay_none">无</string>
     <string name="automation_effects_title">自动化 &amp; 音效</string>
-    <string name="notification_convert_sound_to_vibration_title">收到通知时震动</string>
-    <string name="notification_convert_sound_to_vibration_summary">处于震动模式时，所有的通知都将无视任何应用的单独设置并产生震动</string>
-    <string name="notification_vibrate_during_calls_title">呼叫时震动</string>
-    <string name="notification_vibrate_during_calls_summary">通话期间来电时震动通知</string>
+    <string name="notification_convert_sound_to_vibration_title">收到通知时振动</string>
+    <string name="notification_convert_sound_to_vibration_summary">处于振动模式时，所有的通知都将无视任何应用的单独设置并产生振动</string>
+    <string name="notification_vibrate_during_calls_title">呼叫时振动</string>
+    <string name="notification_vibrate_during_calls_summary">通话期间来电时振动通知</string>
     <string name="volume_adjust_sounds_enable_title">音量调整提示音</string>
     <string name="volume_adjust_sounds_enable_summary">使用音量键调整音量时将播放提示音</string>
     <string name="button_settings">按键</string>
@@ -483,9 +495,9 @@
     <string name="pref_ring_mode_title">声音切换模式</string>
     <string name="pref_ring_mode_summary">选择声音按钮的切换方式</string>
     <string name="cm_sound_mode_silent">静音</string>
-    <string name="cm_sound_mode_vibrate">震动</string>
+    <string name="cm_sound_mode_vibrate">振动</string>
     <string name="cm_sound_mode_sound">声音</string>
-    <string name="cm_sound_mode_soundVibrate">声音 &amp; 震动</string>
+    <string name="cm_sound_mode_soundVibrate">声音 &amp; 振动</string>
     <string name="tiles_reset_title">重置</string>
     <string name="tiles_reset_message">您确定将显示的按钮与布局还原为默认值？</string>
     <string name="app_security_title">应用安全</string>
@@ -553,9 +565,9 @@
     <string name="navring_action_kill_app">终止程序</string>
     <string name="navring_action_none">无</string>
     <string name="navring_action_take_screenshot">屏幕截图</string>
-    <string name="navring_action_ring_vibrate">响铃/震动</string>
+    <string name="navring_action_ring_vibrate">响铃/振动</string>
     <string name="navring_action_ring_silent">响铃/静音</string>
-    <string name="navring_action_ring_vibrate_silent">响铃/震动/静音</string>
+    <string name="navring_action_ring_vibrate_silent">响铃/振动/静音</string>
     <string name="navring_action_screen_off">关闭屏幕</string>
     <string name="navring_action_torch">手电筒开关</string>
     <string name="navring_action_google_now">Google 即时</string>
@@ -563,7 +575,7 @@
     <string name="power_notifications_category_title">插入/拔出电源提示音</string>
     <string name="power_notifications_enable_title">启用</string>
     <string name="power_notifications_enable_summary">连接或断开充电器时播放提示音</string>
-    <string name="power_notifications_vibrate_title">震动</string>
+    <string name="power_notifications_vibrate_title">振动</string>
     <string name="power_notifications_ringtone_title">选择提示音</string>
     <string name="power_notifications_ringtone_silent">静音</string>
     <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
@@ -582,7 +594,7 @@
     <string name="privacy_guard_filter_does_not_match">没有安装具有相关权限的应用</string>
     <string name="privacy_guard_help_title">帮助</string>
     <string name="privacy_guard_reset_title">重置</string>
-    <string name="privacy_guard_reset_text">重置权限?</string>
+    <string name="privacy_guard_reset_text">确认重置权限设置？</string>
     <string name="privacy_guard_help_text">在这个屏幕上，您可以简单的通过点击来选择在哪些应用上启用隐私防护。选中的应用将无法访问个人隐私数据，例如：联系人、短信或通话记录。长按一个条目将打开应用的详细页面。\n\n默认情况下将不显示内置的应用。如果您想显示内置应用或者只显示那些在权限声明中需要访问个人隐私数据的应用，请在菜单中选择相应的选项。</string>
     <string name="privacy_guard_manager_show_system_apps">显示内置应用</string>
     <string name="privacy_guard_manager_filter_permissions">权限过滤</string>
@@ -614,7 +626,7 @@
     <string name="remove_blacklist_entry">您确定要从黑名单中移除吗？</string>
     <string name="select_contact">选择联系人</string>
     <string name="vibrator_intensity_title">振动器强度</string>
-    <string name="vibrator_warning">不推荐高于 %1$d 的震动强度</string>
+    <string name="vibrator_warning">不推荐高于 %1$d 的振动强度</string>
     <string name="color_calibration_title">颜色校准</string>
     <string name="color_calibration_summary">校准屏幕颜色</string>
     <string name="color_red_title">红</string>
@@ -634,11 +646,12 @@
     <string name="backlight_summary_disabled">已禁用</string>
     <string name="backlight_summary_enabled_with_timeout">保持背光灯 <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">已启用</string>
+    <string name="accessibility_home_button_answers_call_prerefence_title">Home 键接通来电</string>
     <string name="gamma_tuning_title_head">伽玛校准</string>
     <string name="gamma_tuning_summary_head">调整伽玛值</string>
     <string name="more_device_controls_title">更多\u2026</string>
     <string name="more_device_settings_title">其他设备选项</string>
-    <string name="sensors_motors_title">传感器 &amp; 震动</string>
+    <string name="sensors_motors_title">传感器 &amp; 振动</string>
     <string name="display_calibration_title">屏幕校准</string>
     <string name="double_tap_to_wake_title">双击唤醒</string>
     <string name="category_quick_access">下拉快捷开关</string>
@@ -646,4 +659,30 @@
     <string name="title_quick_access_linked">连接布局</string>
     <string name="summary_quick_access_linked">使用与快速设置面板中相同的按钮和布局</string>
     <string name="font_size_sample">示例</string>
+    <string name="ime_switcher_notify">输入法通知</string>
+    <string name="ime_switcher_notify_summary">在通知栏显示输入法选择器</string>
+    <string name="app_ops_summaries_wifi_change">wifi 更改</string>
+    <string name="app_ops_labels_wifi_change">Wi-Fi 更改</string>
+    <string name="app_ops_summaries_bluetooth_change">蓝牙更改</string>
+    <string name="app_ops_labels_bluetooth_change">蓝牙更改</string>
+    <string name="app_ops_summaries_data_change">数据更改</string>
+    <string name="app_ops_labels_data_change">数据更改</string>
+    <string name="app_ops_summaries_alarm_wakeup">唤醒</string>
+    <string name="app_ops_labels_alarm_wakeup">唤醒</string>
+    <string name="app_ops_summaries_auto_start">自启动</string>
+    <string name="app_ops_labels_auto_start">自启动</string>
+    <string name="app_ops_categories_bootup">开机</string>
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (使用 <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">允许 <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">拒绝 <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">允许 <xliff:g id="count">%1$s</xliff:g>, 拒绝 <xliff:g id="count">%2$s</xliff:g></string>
+    <plurals name="app_ops_count">
+        <item quantity="one">1次</item>
+        <item quantity="other">%d 次</item>
+    </plurals>
+    <string name="app_ops_show_user_apps">显示用户应用</string>
+    <string name="app_ops_show_system_apps">显示内建应用</string>
+    <string name="app_ops_reset_counters">重置 允许/拒绝 计数器</string>
+    <string name="app_ops_reset_confirm_title">确认计数器重置</string>
+    <string name="app_ops_reset_confirm_mesg">你确定希望重置 AppOps 计数器？</string>
 </resources>

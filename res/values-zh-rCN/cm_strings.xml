@@ -394,9 +394,12 @@
     <string name="power_menu_reboot_title">重启菜单</string>
     <string name="power_menu_screenshot_title">屏幕截图</string>
     <string name="power_menu_expanded_desktop">扩展桌面</string>
+    <string name="expanded_desktop_style">扩展桌面风格</string>
     <string name="expanded_desktop_disabled">禁用</string>
     <string name="expanded_desktop_status_bar">显示状态栏</string>
     <string name="expanded_desktop_no_status_bar">隐藏状态栏</string>
+    <string name="expanded_desktop_system_bars_visibility">在锁定屏幕时禁用</string>
+    <string name="expanded_desktop_system_bars_visibility_summary">在锁定屏幕时，显示状态和导航栏扩展桌面模式</string>
     <string name="power_menu_profiles_title">情景模式</string>
     <string name="power_menu_airplane_title">飞行模式</string>
     <string name="power_menu_user_title">用户切换器</string>

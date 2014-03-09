@@ -64,6 +64,13 @@
         android:icon="@drawable/ic_kylin_sidebar"
         android:fragment="com.android.settings.kylinmod.AppSidebar" />
 
+    <!-- Lockscreen Notifications -->
+    <PreferenceScreen
+        android:id="@+id/lockscreen_notifications"
+        android:title="@string/lockscreen_notifications_title"
+        android:icon="@drawable/ic_kylin_locknotification"
+        android:fragment="com.android.settings.kylinmod.LockscreenNotifications" />
+
     <!-- Active Display -->
     <PreferenceScreen
         android:id="@+id/active_display"

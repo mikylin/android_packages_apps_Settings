@@ -311,4 +311,38 @@
     <string name="blacklist_all_numbers_title">所有号码</string>
     <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>
 
+    <!-- Categories --> 
+    <string name="general">常规</string>
+    <string name="layout">布局</string>
+    <string name="privacy">隐私</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="lockscreen_notifications_header">锁屏通知</string>
+    <string name="lockscreen_notifications_title">锁屏通知</string>
+    <string name="lockscreen_notifications_summary">在锁屏挂起，显示其通知</string>
+    <string name="pocket_mode">口袋模式</string>
+    <string name="pocket_mode_summary">当你从口袋中拿出设备时主动显示锁屏上未读通知。</string>
+    <string name="show_always">总是显示</string>
+    <string name="show_always_summary">当你从口袋中拿出设备时，无论有没有未读通知始终执行开启屏幕。</string>
+    <string name="hide_low_priority">低优先级隐藏</string>
+    <string name="hide_low_priority_summary">隐藏诸如Google Now天气等低优先级通知。</string>
+    <string name="hide_non_clearable">隐藏不可清除</string>
+    <string name="hide_non_clearable_summary">隐藏所有不可清除的通知</string>
+    <string name="dismiss_all">允许撤销所有通知</string>
+    <string name="dismiss_all_summary">允许撤销所有的通知包括不可清除的，当然只是从锁屏界面消失，而通知面板依然存在通知。</string>
+    <string name="expanded_view">通知视图扩展</string>
+    <string name="expanded_view_summary">锁屏通知被允许时，可能展开通知显示其内容。</string>
+    <string name="force_expanded_view">强制显示扩展</string>
+    <string name="force_expanded_view_summary">默认直接显示扩展通知，但你仍能够切换到普通视图。</string>
+    <string name="wake_on_notification">通知唤醒</string>
+    <string name="wake_on_notification_summary">收到新的通知时唤醒设备</string>
+    <string name="notifications_height">通知计数</string>
+    <string name="notifications_height_summary">即时显示通知数量</string>
+    <string name="offset_top">偏移到屏幕上方：</string>
+    <string name="privacy_mode">隐私模式</string>
+    <string name="privacy_mode_summary">禁止显示隐私的通知，通常只会看到你想要的通知图标。</string>
+    <string name="excluded_apps_title">隐私应用</string>
+    <string name="excluded_apps_summary">隐私应用的通知，将不会显示在锁屏通知中。</string>
+    <string name="notification_color">通知的背景颜色</string>
+ 
 </resources>

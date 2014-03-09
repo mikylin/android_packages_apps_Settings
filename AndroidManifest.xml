@@ -1741,9 +1741,15 @@
 
         <activity android:name=".kylinmod.AppSidebar" />
 
-        <activity android:name=".kylinmod.UserInterface" />  
+        <activity android:name=".kylinmod.UserInterface" />
 
-        <activity android:name=".kylinmod.RamBar" />  
+        <activity android:name=".kylinmod.RamBar" />
+
+        <!-- Lockscreen Notifications -->
+        <activity
+            android:name=".kylinmod.LockscreenNotifications"
+            android:label="@string/Lockscreen_notifications_header" >
+        </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to ass display rotation config -->
         <activity android:name="Settings$ASSRamBarActivity"

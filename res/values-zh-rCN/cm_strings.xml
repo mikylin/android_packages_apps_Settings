@@ -436,6 +436,7 @@
     <string name="custom_runtime_warning_title">警告</string>
     <string name="custom_runtime_warning_message">KylinMod 不正式支持 ART 模式。本设置仅用于测试与研究，并可能潜在不稳定的因素、导致奔溃, 数据丢失或设备无法启动。请查看 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt; ART&lt;/a&gt; 相关介绍以获得更多相关信息。&lt;br/&gt;&lt;br/&gt; 我们希望当您开启 ART 模式作为运行时模式的时候不要发送 Bug 报告。&lt;br/&gt;&lt;br/&gt; 你确认你真的想要重启并将运行时模式从 <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> 切换至 <xliff:g id="new" example="libart.so">%2$s</xliff:g>？</string>
     <string name="whisperpush_title">私密推送</string>
+    <string name="whisperpush_summary">管理安全短信设置</string>
     <string name="whisperpush_registration_title">注册</string>
     <string name="whisperpush_registration_summary">通过注册私密推送来启用加密短信</string>
     <string name="whisperpush_identitykey_title">检视身份密钥</string>

@@ -19,13 +19,13 @@
     <string-array name="entries_status_bar_am_pm">
         <item>正常</item>
         <item>小</item>
-        <item>无</item>
+        <item>無</item>
     </string-array>
 
     <!-- App sidebar -->
     <string-array name="tab_position_entries">
-        <item>顶部</item>
-        <item>中间</item>
+        <item>頂部</item>
+        <item>中間</item>
         <item>底部</item>
     </string-array>
 

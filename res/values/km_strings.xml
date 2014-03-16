@@ -297,10 +297,6 @@
     <string name="power_saver_toggles_cpu_governor_title">Sleep Powersave</string>
     <string name="power_saver_toggles_cpu_governor_summary">Conserve CPU usage on screen off</string>
 
-    <!-- Force show navigation bar -->
-    <string name="force_show_navigation_bar_title">Show navigation bar</string>
-    <string name="force_show_navigation_bar_summary">Force show navigation bar (requires reboot)</string>
-
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>

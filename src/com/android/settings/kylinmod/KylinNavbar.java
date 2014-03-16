@@ -28,7 +28,6 @@ import android.os.UserManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
@@ -43,9 +42,6 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
 
     private static final String TAG = "KylinNavbar";
 
-    // Force show navigation bar
-    private static final String KEY_FORCE_SHOW_NAVIGATION_BAR = "force_show_navigation_bar";
-
     // Custom Navigation Bar Height Key
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
@@ -55,9 +51,6 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
-
-    // Force show navigation bar
-    private CheckBoxPreference mForceShowNavigationBarPref;
 
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
@@ -84,10 +77,6 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
         mNavButtonsHeight.setValue(String.valueOf(statusNavButtonsHeight));
         mNavButtonsHeight.setSummary(mNavButtonsHeight.getEntry());
 
-        mForceShowNavigationBarPref =
-                (CheckBoxPreference) findPreference(KEY_FORCE_SHOW_NAVIGATION_BAR);
-        mForceShowNavigationBarPref.setOnPreferenceChangeListener(this);
-
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
         mExpandedDesktopNoNavbarPref =
@@ -104,16 +93,11 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
 
         try {
             boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
-            boolean mHasNavigationBar = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
-            PreferenceCategory mCategoryNavbar = (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
             if (hasNavBar) {
                 mExpandedDesktopPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
                 updateExpandedDesktop(expandedDesktopValue);
                 expandedCategory.removePreference(mExpandedDesktopNoNavbarPref);
-                if (mHasNavigationBar) {
-                    mCategoryNavbar.removePreference(mForceShowNavigationBarPref);
-                }
                 if (!Utils.isPhone(getActivity())) {
                     PreferenceCategory navCategory =
                             (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
@@ -125,8 +109,7 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
                 mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
                 expandedCategory.removePreference(mExpandedDesktopPref);
                 // Hide navigation bar category
-                mCategoryNavbar.removeAll();
-                mCategoryNavbar.addPreference(mForceShowNavigationBarPref);
+                prefScreen.removePreference(findPreference(CATEGORY_NAVBAR));
             }
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
@@ -142,10 +125,6 @@ public class KylinNavbar extends SettingsPreferenceFragment implements
         } else if (preference == mExpandedDesktopNoNavbarPref) {
             boolean value = (Boolean) objValue;
             updateExpandedDesktop(value ? 2 : 0);
-            return true;
-        } else if (preference == mForceShowNavigationBarPref) {
-            Settings.System.putInt(resolver, Settings.System.FORCE_SHOW_NAVIGATION_BAR,
-                    (Boolean) objValue ? 1 : 0);
             return true;
         } else if (preference == mNavButtonsHeight) {
             int index = mNavButtonsHeight.findIndexOfValue((String) objValue);

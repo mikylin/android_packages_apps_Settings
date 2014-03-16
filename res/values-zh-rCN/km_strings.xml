@@ -271,6 +271,10 @@
     <string name="power_saver_toggles_cpu_governor_title">待机节能</string>
     <string name="power_saver_toggles_cpu_governor_summary">屏幕关闭后将切换到节能模式</string>
 
+    <!-- Force show navigation bar -->
+    <string name="force_show_navigation_bar_title">显示虚拟导航栏</string>
+    <string name="force_show_navigation_bar_summary">强制显示虚拟导航栏（需要重启）</string>
+
     <!-- General strings -->
     <string name="ok">确认</string>
     <string name="reset">重置</string>

@@ -327,4 +327,9 @@
     <string name="flip_qs_tiles_title">方块式翻转</string>
     <string name="flip_qs_tiles_summary">触摸时呈方块式翻转模式</string>
 
+    <!-- QuickSettings style -->
+    <string name="tiles_per_row_title">每行瓷砖的数量</string>
+    <string name="tiles_per_row_duplicate_landscape_title">横向视图数量</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">横向视图中每行的数量加倍</string>
+
 </resources>

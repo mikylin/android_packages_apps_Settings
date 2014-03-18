@@ -36,6 +36,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="quicksettings_style"
+        android:title="@string/quicksettings_style_tiles">
+
+        <CheckBoxPreference
+            android:key="flip_qs_tiles"
+            android:title="@string/flip_qs_tiles_title"
+            android:summary="@string/flip_qs_tiles_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="static_tiles"
         android:title="@string/title_static_tiles" >
 

@@ -348,4 +348,9 @@
     <string name="blacklist_all_numbers_title">All numbers</string>
     <string name="blacklist_all_numbers_summary">Block all calls</string>
 
+    <!-- QuickSettings fliptiles -->
+    <string name="quicksettings_style_tiles">Style</string>
+    <string name="flip_qs_tiles_title">Flip tiles</string>
+    <string name="flip_qs_tiles_summary">Flips the tiles on touch</string>
+
 </resources>

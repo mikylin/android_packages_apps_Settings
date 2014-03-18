@@ -322,4 +322,9 @@
     <string name="blacklist_all_numbers_title">所有号码</string>
     <string name="blacklist_all_numbers_summary">阻止所有人的来电</string>
 
+    <!-- QuickSettings fliptiles -->
+    <string name="quicksettings_style_tiles">风格</string>
+    <string name="flip_qs_tiles_title">方块式翻转</string>
+    <string name="flip_qs_tiles_summary">触摸时呈方块式翻转模式</string>
+
 </resources>

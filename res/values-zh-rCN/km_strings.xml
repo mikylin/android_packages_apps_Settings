@@ -332,4 +332,8 @@
     <string name="tiles_per_row_duplicate_landscape_title">横向视图数量</string>
     <string name="tiles_per_row_duplicate_landscape_summary">横向视图中每行的数量加倍</string>
 
+    <!-- Statusbar header -->
+    <string name="custom_statusbar_header_title">通知面板时间栏背景</string>
+    <string name="custom_statusbar_header_summary">设置通知面板时间栏的背景，根据当前日期和时间的改变图像</string>
+
 </resources>

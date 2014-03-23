@@ -336,4 +336,16 @@
     <string name="custom_statusbar_header_title">通知面板时间栏背景</string>
     <string name="custom_statusbar_header_summary">设置通知面板时间栏的背景，根据当前日期和时间的改变图像</string>
 
+    <!-- Notification drawer background -->
+    <string name="category_notificationdrawer_style">风格</string>
+    <string name="notification_style_title">通知面板栏风格</string>
+    <string name="notification_style_summary">改变你的通知面板栏的风格</string>
+    <string name="notification_wallpaper_title">背景</string>
+    <string name="notification_wallpaper_landscape_title">更改为您喜欢的风格</string>
+    <string name="notification_background_color_fill">颜色填充</string>
+    <string name="notification_background_custom_image">自定义图像</string>
+    <string name="notification_background_default_wallpaper">默认背景</string>
+    <string name="notification_drawer_custom_background_dialog_title">选择颜色</string>
+    <string name="notif_wallpaper_alpha_title">背景透明度</string>
+
 </resources>

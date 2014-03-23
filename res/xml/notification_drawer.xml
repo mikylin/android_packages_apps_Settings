@@ -26,11 +26,22 @@
         android:entries="@array/notification_drawer_collapse_on_dismiss_entries"
         android:entryValues="@array/notification_drawer_collapse_on_dismiss_values" />
 
-    <CheckBoxPreference
-        android:key="custom_status_bar_header"
-        android:title="@string/custom_statusbar_header_title"
-        android:summary="@string/custom_statusbar_header_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:title="@string/category_notificationdrawer_style" >
+
+        <CheckBoxPreference
+            android:key="custom_status_bar_header"
+            android:title="@string/custom_statusbar_header_title"
+            android:summary="@string/custom_statusbar_header_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:fragment="com.android.settings.kylinmod.NotificationDrawerStyle"
+            android:key="notification_style"
+            android:title="@string/notification_style_title"
+            android:summary="@string/notification_style_summary" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/category_quick_access" >

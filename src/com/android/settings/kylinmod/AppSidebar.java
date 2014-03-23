@@ -28,6 +28,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.widget.SeekBarPreference;
 
 public class AppSidebar extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
@@ -174,7 +175,7 @@ public class AppSidebar extends SettingsPreferenceFragment implements
 
     @Override
     public void onResume() {
-        super.onResume();    //To change body of overridden methods use File | Settings | File Templates.
+        super.onResume();
         Settings.System.putInt(getContentResolver(),
                 Settings.System.APP_SIDEBAR_SHOW_TRIGGER, 1);
     }

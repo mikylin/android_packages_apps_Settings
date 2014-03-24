@@ -375,4 +375,26 @@
     <string name="notif_wallpaper_alpha_title">Background transparency</string>
     <string name="notif_alpha_title">Notification transparency</string>
 
+    <!-- Slims Strings (Temporary) -->
+    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app.</string>
+
+    <!-- Animation Controls -->
+    <string name="animation_controls_settings_title">Custom system animations</string>
+    <string name="title_animation_controls">system animations</string>
+    <string name="activity_open_title">Activity open animation</string>
+    <string name="activity_close_title">Activity close animation</string>
+    <string name="task_open_title">Task open animation</string>
+    <string name="task_close_title">Task close animation</string>
+    <string name="task_move_to_front_title">Move to front animation</string>
+    <string name="task_move_to_back_title">Move to back animation</string>
+    <string name="wallpaper_open_title">Wallpaper open animation</string>
+    <string name="wallpaper_close_title">Wallpaper close animation</string>
+    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
+    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
+    <string name="animation_duration_title">Animation duration</string>
+    <string name="title_animation_no_override">Prevent app overrides</string>
+    <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>
+    <string name="animation_duration_default">Default</string>
+    <string name="header_summary_animation">@null</string>
+
 </resources>

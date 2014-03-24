@@ -1766,12 +1766,22 @@
                 <category android:name="android.intent.category.SHORTCUT" />
               </intent-filter>
         </activity>
+
         <activity
             android:name=".kylinmod.PowerSaverSettings"
             android:label="@string/power_saver_settings_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SHORTCUT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".kylinmod.fragments.AnimationControls"
+            android:label="@string/title_animation_controls">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.android.settings.SHORTCUT"/>
             </intent-filter>
         </activity>
 

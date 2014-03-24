@@ -330,7 +330,7 @@
     <!-- QuickSettings style -->
     <string name="tiles_per_row_title">每行瓷砖的数量</string>
     <string name="tiles_per_row_duplicate_landscape_title">横向视图数量</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">横向视图中每行的数量加倍</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">横屏视图中每行的数量加倍</string>
 
     <!-- Statusbar header -->
     <string name="custom_statusbar_header_title">通知面板时间栏背景</string>
@@ -338,15 +338,36 @@
 
     <!-- Notification drawer background -->
     <string name="category_notificationdrawer_style">风格</string>
-    <string name="notification_style_title">通知面板栏风格</string>
+    <string name="notification_style_title">通知面板风格</string>
     <string name="notification_style_summary">改变你的通知面板栏的风格</string>
     <string name="notification_wallpaper_title">背景</string>
-    <string name="notification_wallpaper_landscape_title">更改为您喜欢的风格</string>
+    <string name="notification_wallpaper_landscape_title">横屏时通知面板背景</string>
     <string name="notification_background_color_fill">颜色填充</string>
     <string name="notification_background_custom_image">自定义图像</string>
     <string name="notification_background_default_wallpaper">默认背景</string>
     <string name="notification_drawer_custom_background_dialog_title">选择颜色</string>
     <string name="notif_wallpaper_alpha_title">背景透明度</string>
     <string name="notif_alpha_title">通知透明度</string>
+
+    <!-- Slims Strings (Temporary) -->
+    <string name="shortcut_image_not_valid">所选择的应用程序没有返回一个有效的图标或不支持图像裁剪。请使用其他应用程序。</string>
+
+    <!-- Animation Controls -->
+    <string name="animation_controls_settings_title">定制系统动画</string>
+    <string name="title_animation_controls">动画控制器</string>
+    <string name="activity_open_title">页面打开动画</string>
+    <string name="activity_close_title">页面关闭动画</string>
+    <string name="task_open_title">任务打开动画</string>
+    <string name="task_close_title">任务关闭动画</string>
+    <string name="task_move_to_front_title">移动到前台动画</string>
+    <string name="task_move_to_back_title">移动到后台动画</string>
+    <string name="wallpaper_open_title">窗口打开动画</string>
+    <string name="wallpaper_close_title">窗口关闭动画</string>
+    <string name="wallpaper_intra_open_title">窗口内部打开动画</string>
+    <string name="wallpaper_intra_close_title">窗口内部关闭动画</string>
+    <string name="animation_duration_title">动画持续时间</string>
+    <string name="title_animation_no_override">防止应用程序覆盖 </string>
+    <string name="summary_animation_no_override">防止应用程序动画覆盖该过渡动画</string>
+    <string name="animation_duration_default">默认</string>
 
 </resources>

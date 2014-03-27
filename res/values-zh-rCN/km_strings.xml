@@ -370,4 +370,31 @@
     <string name="summary_animation_no_override">防止应用程序动画覆盖该过渡动画</string>
     <string name="animation_duration_default">默认</string>
 
+    <!-- Lockscreen style settings -->
+    <string name="lockscreen_style_reset_message">重置所有锁屏的颜色?</string>
+    <string name="lockscreen_icon_title">锁屏手柄图标</string>
+    <string name="lockscreen_lock_icon_custom">自定义图标</string>
+    <string name="lockscreen_lock_icon_kylin">麒麟图标</string>
+    <string name="lockscreen_lock_icon_default">默认图标</string>
+    <string name="lockscreen_colorize_handle_title">定制手柄颜色</string>
+    <string name="lockscreen_colorize_handle_summary">定制的颜色会被应用到锁屏手柄中</string>
+    <string name="lockscreen_style_title">锁屏主题风格</string>
+    <string name="lockscreen_frame_color_title">边框颜色</string>
+    <string name="lockscreen_frame_color_summary">窗口小部件和解锁边框的颜色</string>
+    <string name="lockscreen_lock_color_title">手柄颜色</string>
+    <string name="lockscreen_lock_color_summary">锁屏手柄的颜色</string>
+    <string name="lockscreen_dots_color_title">斑点颜色</string>
+    <string name="lockscreen_dots_color_summary">解锁时圆斑点的颜色</string>
+
+    <!-- Lockscreen background -->
+    <string name="lockscreen_background">背景</string>
+    <string name="lockscreen_background_style_title">锁屏背景风格</string>
+    <string name="background_color_fill_title">背景颜色</string>
+    <string name="background_default">默认背景的风格</string>
+    <string name="background_color_fill">颜色填充</string>
+    <string name="background_wallpaper">自定义图像</string>
+    <string name="transparency">背景透明度</string>
+    <string name="background_result_successful">改变背景</string>
+    <string name="background_result_not_successful">不改变背景</string>
+
 </resources>

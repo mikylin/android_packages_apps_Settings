@@ -426,5 +426,9 @@
     <!-- Shortcuts List -->
     <string name="shortcut_bar_title">Shortcut Bar</string>
     <string name="shortcut_bar_clear_title">Clear</string>
+    <string name="recent_shortcut_priority_title">Recent apps shortcuts arrangement</string>
+    <string name="recent_shortcut_priority_summary">Customize recent apps shorcuts arrangement</string>
+    <string name="recent_shortcut_excluded_apps_title">Hide apps</string>
+    <string name="recent_shortcut_excluded_apps_summary">Hide apps from recent apps shortcuts</string>
 
 </resources>

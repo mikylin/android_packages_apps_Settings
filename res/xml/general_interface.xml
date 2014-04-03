@@ -36,6 +36,11 @@
             android:fragment="com.android.settings.kylinmod.RecentShortCutPriority"
             android:title="@string/shortcut_bar_title" />
 
+        <PreferenceScreen
+            android:key="recent_shortcut"
+            android:fragment="com.android.settings.kylinmod.RecentShortCutSettings"
+            android:title="@string/recent_shortcut_title" />
+
         <!-- Screen_recorder -->
         <PreferenceScreen
                 android:key="screen_recorder"

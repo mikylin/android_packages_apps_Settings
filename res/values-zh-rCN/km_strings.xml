@@ -397,4 +397,8 @@
     <string name="background_result_successful">改变背景</string>
     <string name="background_result_not_successful">不改变背景</string>
 
+    <!-- Shortcuts List -->
+    <string name="shortcut_bar_title">快捷任务栏</string>
+    <string name="shortcut_bar_clear_title">清除任务</string>
+
 </resources>

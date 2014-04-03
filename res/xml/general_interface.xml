@@ -30,6 +30,12 @@
                 android:fragment="com.android.settings.kylinmod.RamBar"
                 android:title="@string/ram_bar" /> 
 
+        <!-- Shortcuts List -->
+        <PreferenceScreen
+            android:key="shortcut_bar"
+            android:fragment="com.android.settings.kylinmod.RecentShortCutPriority"
+            android:title="@string/shortcut_bar_title" />
+
         <!-- Screen_recorder -->
         <PreferenceScreen
                 android:key="screen_recorder"

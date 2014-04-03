@@ -423,4 +423,8 @@
     <string name="background_result_successful">Background changed</string>
     <string name="background_result_not_successful">Background not changed</string>
 
+    <!-- Shortcuts List -->
+    <string name="shortcut_bar_title">Shortcut Bar</string>
+    <string name="shortcut_bar_clear_title">Clear</string>
+
 </resources>

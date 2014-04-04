@@ -74,7 +74,7 @@ public class ShortCutMultiSelectListPreference extends DialogPreference {
         String shortcutItemString = Settings.System.getString(context.getContentResolver(), Settings.System.SHORTCUT_ITEMS);
         String [] mShortcutListItems = null;
         if (TextUtils.isEmpty(shortcutItemString)) {
-            mShortcutListItems = mContext.getResources().getStringArray(com.mokee.internal.R.array.shortcut_list_items);
+            mShortcutListItems = mContext.getResources().getStringArray(com.android.internal.R.array.shortcut_list_items);
         } else {
             mShortcutListItems = shortcutItemString.split(",");
         }

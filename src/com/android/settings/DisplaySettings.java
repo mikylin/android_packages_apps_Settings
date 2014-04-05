@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT_OLD;
 
 import android.app.ActivityManagerNative;
 import android.app.Dialog;
@@ -59,6 +60,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
+    private static final int SCREEN_TIMEOUT_AWAKE  = Integer.MAX_VALUE;
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
@@ -254,6 +256,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (currentTimeout < 0) {
             // Unsupported value
             summary = "";
+        } else if (currentTimeout == SCREEN_TIMEOUT_AWAKE) {
+            summary = getString(R.string.screen_timeout_awake_summary);
         } else {
             final CharSequence[] entries = preference.getEntries();
             final CharSequence[] values = preference.getEntryValues();
@@ -288,7 +292,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         ArrayList<CharSequence> revisedValues = new ArrayList<CharSequence>();
         for (int i = 0; i < values.length; i++) {
             long timeout = Long.parseLong(values[i].toString());
-            if (timeout <= maxTimeout) {
+            if (timeout <= maxTimeout || timeout == SCREEN_TIMEOUT_AWAKE) {
                 revisedEntries.add(entries[i]);
                 revisedValues.add(values[i]);
             }
@@ -456,6 +460,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (KEY_SCREEN_TIMEOUT.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
+                int screenTimeout = Settings.System.getIntForUser(getContentResolver(),
+                                     Settings.System.SCREEN_OFF_TIMEOUT, 0, UserHandle.USER_CURRENT);
+
+                if (screenTimeout != SCREEN_TIMEOUT_AWAKE) {
+                    Settings.System.putIntForUser(getContentResolver(), SCREEN_OFF_TIMEOUT_OLD, screenTimeout, UserHandle.USER_CURRENT);
+                }
                 Settings.System.putInt(getContentResolver(), SCREEN_OFF_TIMEOUT, value);
                 updateTimeoutPreferenceDescription(value);
             } catch (NumberFormatException e) {

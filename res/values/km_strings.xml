@@ -423,4 +423,21 @@
     <string name="background_result_successful">Background changed</string>
     <string name="background_result_not_successful">Background not changed</string>
 
+    <!-- Shortcuts List -->
+    <string name="recent_shortcut_title">Shortcut Bar</string>
+    <string name="recent_shortcut_clear_title">Clear</string>
+    <string name="recent_shortcut_gravity_title">Shortcut bar gravity</string>
+    <string name="recent_shortcut_gravity_summary">Customize shortcut bar gravity in portrait mode</string>
+    <string name="recent_shortcut_gravity_right_top">Top right</string>
+    <string name="recent_shortcut_gravity_right_bottom">Bottom right</string>
+    <string name="recent_shortcut_gravity_left_top">Top left</string>
+    <string name="recent_shortcut_gravity_left_bottom">Bottom left</string>
+    <string name="recent_shortcut_priority_title">Recent apps shortcuts arrangement</string>
+    <string name="recent_shortcut_priority_summary">Customize recent apps shorcuts arrangement</string>
+    <string name="recent_shortcut_excluded_apps_title">Hide apps</string>
+    <string name="recent_shortcut_excluded_apps_summary">Hide apps from recent apps shortcuts</string>
+
+    <!-- Stay awake -->
+    <string name="screen_timeout_awake_summary">Never sleep</string>
+
 </resources>

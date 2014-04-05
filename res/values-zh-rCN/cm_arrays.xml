@@ -37,8 +37,8 @@
         <item>启用</item>
     </string-array>
     <string-array name="entries_screentimeout_widget">
-        <item>15 秒 | 1 分钟 | 5 分钟</item>
-        <item>30 秒 | 2 分钟 | 5 分钟</item>
+        <item>15 秒 | 1 分钟 | 5 分钟 | 保持唤醒</item>
+        <item>30 秒 | 2 分钟 | 5 分钟 | 保持唤醒</item>
     </string-array>
     <string-array name="app_ops_summaries_cm">
         <item>粗略定位</item>
@@ -155,5 +155,11 @@
         <item>媒体</item>
         <item>设备</item>
         <item>@string/app_ops_categories_bootup</item>
+    </string-array>
+
+    <string-array name="app_ops_permissions">
+        <item>已允许</item>
+        <item>已禁止</item>
+        <item>总是询问</item>
     </string-array>
 </resources>

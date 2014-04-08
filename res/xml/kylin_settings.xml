@@ -90,7 +90,7 @@
         android:id="@+id/power_menu_settings"
         android:title="@string/power_menu_title"
         android:icon="@drawable/ic_kylin_powermenu"
-        android:fragment="com.android.settings.kylinmod.PowerMenu" />
+        android:fragment="com.android.settings.cyanogenmod.PowerMenu" />
 
     <!-- Animation Options -->
     <PreferenceScreen

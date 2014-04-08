@@ -1749,8 +1749,6 @@
 
         <activity android:name=".kylinmod.AnimationOptions" />
 
-        <activity android:name=".kylinmod.PowerMenu" />
-
         <activity android:name=".kylinmod.themes.ThemeSettings" />
 
         <activity android:name=".kylinmod.AppSidebar" />

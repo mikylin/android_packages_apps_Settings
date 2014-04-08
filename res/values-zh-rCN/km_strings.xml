@@ -290,11 +290,13 @@
     <string name="hex_hint">\#ff000000</string>
     <string name="set">设置</string>
 
-    <!-- Recents Ram Bar -->
-    <string name="general_interface_title">常规界面</string>
+    <!-- Recents interface -->
+    <string name="recents_interface_title">最近应用界面</string>
 
     <!-- Recents Ram Bar -->
+    <string name="general_interface_title">常规界面</string>
     <string name="ram_bar">Ram条</string>
+    <string name="recent_ram_bar_summary">为最近任务Ram条设置你自己喜欢的风格</string>
     <string name="ram_bar_note_title">注释</string>
     <string name="ram_bar_note_summary">该Ram条显示实际是安卓内存（RAM）占用的利用率.请注意,有缓存的应用可以帮助你的设备更快的打开应用程序.有关如何安卓内存（RAM）占用的管理工作进一步解释，检查帮助菜单.</string>
     <string name="ram_bar_mode_title">Ram条的模式</string>

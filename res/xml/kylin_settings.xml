@@ -22,13 +22,6 @@
     android:title="@string/kylin_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- General interface -->
-    <PreferenceScreen
-        android:id="@+id/general_interface"
-        android:title="@string/general_interface_title"
-        android:icon="@drawable/ic_kylin_general_ui"
-        android:fragment="com.android.settings.kylinmod.UserInterface" />
-
     <!-- Statusbar -->
     <PreferenceScreen
         android:id="@+id/status_bar_settings"
@@ -56,6 +49,13 @@
         android:title="@string/lock_screen_title"
         android:icon="@drawable/ic_kylin_lockscreen"
         android:fragment="com.android.settings.cyanogenmod.LockscreenInterface" />
+
+    <!-- Recents interface -->
+    <PreferenceScreen
+        android:id="@+id/recents_interface"
+        android:title="@string/recents_interface_title"
+        android:icon="@drawable/ic_kylin_recents"
+        android:fragment="com.android.settings.kylinmod.RecentShortCutSettings" />
 
     <!-- App sidebar -->
     <PreferenceScreen

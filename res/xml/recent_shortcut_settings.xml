@@ -15,25 +15,45 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/recent_shortcut_title" >
+    android:title="@string/recents_interface_title" >
 
-    <ListPreference
-        android:dialogTitle="@string/recent_shortcut_gravity_title"
-        android:entries="@array/recent_shortcut_gravity_entries"
-        android:entryValues="@array/recent_shortcut_gravity_values"
-        android:key="recent_shortcut_gravity"
-        android:title="@string/recent_shortcut_gravity_title"
-        android:summary="@string/recent_shortcut_gravity_summary" />
+    <!-- Recents RAM bar -->
+    <PreferenceCategory
+        android:key="general_interface"
+        android:title="@string/general_interface_title">
 
-    <PreferenceScreen
-        android:fragment="com.android.settings.kylinmod.RecentShortCutPriority"
-        android:key="recent_shortcut_priority"
-        android:summary="@string/recent_shortcut_priority_summary"
-        android:title="@string/recent_shortcut_priority_title" />
+        <PreferenceScreen
+                android:key="recents_ram_bar"
+                android:fragment="com.android.settings.kylinmod.RamBar"
+                android:summary="@string/recent_ram_bar_summary"
+                android:title="@string/ram_bar" /> 
 
-    <com.android.settings.widget.ShortCutMultiSelectListPreference
-        android:key="recent_shortcut_excluded_apps"
-        android:summary="@string/recent_shortcut_excluded_apps_summary"
-        android:title="@string/recent_shortcut_excluded_apps_title" />
+    </PreferenceCategory>
+
+    <!-- Recents shortcut -->
+    <PreferenceCategory
+        android:key="recents_shortcut"
+        android:title="@string/recent_shortcut_title">
+
+        <ListPreference
+                android:dialogTitle="@string/recent_shortcut_gravity_title"
+                android:entries="@array/recent_shortcut_gravity_entries"
+                android:entryValues="@array/recent_shortcut_gravity_values"
+                android:key="recent_shortcut_gravity"
+                android:title="@string/recent_shortcut_gravity_title"
+                android:summary="@string/recent_shortcut_gravity_summary" />
+
+        <PreferenceScreen
+                android:fragment="com.android.settings.kylinmod.RecentShortCutPriority"
+                android:key="recent_shortcut_priority"
+                android:summary="@string/recent_shortcut_priority_summary"
+                android:title="@string/recent_shortcut_priority_title" />
+
+        <com.android.settings.widget.ShortCutMultiSelectListPreference
+                android:key="recent_shortcut_excluded_apps"
+                android:summary="@string/recent_shortcut_excluded_apps_summary"
+                android:title="@string/recent_shortcut_excluded_apps_title" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

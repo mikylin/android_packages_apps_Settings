@@ -1749,13 +1749,11 @@
 
         <activity android:name=".kylinmod.AnimationOptions" />
 
-        <activity android:name=".kylinmod.PowerMenu" />
-
         <activity android:name=".kylinmod.themes.ThemeSettings" />
 
         <activity android:name=".kylinmod.AppSidebar" />
 
-        <activity android:name=".kylinmod.UserInterface" />
+        <activity android:name=".kylinmod.RecentShortCutSettings" />
 
         <activity android:name=".kylinmod.NotificationDrawerStyle" />
 
@@ -1812,23 +1810,6 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/kylin_settings" />
         </activity>
-
-        <!-- Anonymous Statistics -->
-        <receiver android:name="com.android.settings.kmstats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
-
-        <service android:label="ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name="com.android.settings.kmstats.ReportingService">
-        </service>
 
         <!-- KylinMod activities End -->	
 
@@ -1928,6 +1909,14 @@
 
         <activity android:name=".ApnEditor" />
 
+        <activity android:name="Settings$AnonymousStatsActivity"
+                android:label="@string/anonymous_statistics_title"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:clearTaskOnLaunch="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.kmstats.AnonymousStats" />
+        </activity>
+
         <activity android:name=".cyanogenmod.ChangeLog" />
 
         <activity android:name=".cyanogenmod.LockscreenInterface" />
@@ -1972,15 +1961,6 @@
         </activity>
 
         <!-- CyanogenMod activities End -->
-
-        <!-- AnonymousStats -->
-        <activity android:name="Settings$AnonymousStatsActivity"
-                android:label="@string/anonymous_statistics_title"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:clearTaskOnLaunch="true">
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.kmstats.AnonymousStats" />
-        </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
@@ -2121,6 +2101,24 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <!-- Anonymous Statistics -->
+        <receiver android:name=".kmstats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".kmstats.ReportingService">
+        </service>
+
 
         <!-- Watch for ContactsContract.Profile changes and update the user's photo.  -->
         <receiver android:name=".users.ProfileUpdateReceiver">

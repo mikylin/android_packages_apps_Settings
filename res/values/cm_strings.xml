@@ -526,8 +526,19 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_interface">Personalization</string>
 
-    <!-- Themes settings -->
+    <!-- Themes Settings -->
+    <!-- Settings main menu entry -->
     <string name="themes_settings_title">Themes</string>
+
+    <!-- The following are entries under the themes menu -->
+    <string name="themepacks_settings_title">Theme Packs</string>
+    <string name="styles_settings_title">Styles</string>
+    <string name="icons_settings_title">Icons</string>
+    <string name="fonts_settings_title">Fonts</string>
+    <string name="wallpaper_settings_title">Wallpapers</string>
+    <string name="lockscreen_wallpaper_settings_title">Lockscreen Wallpapers</string>
+    <string name="bootanim_settings_title">Boot Animations</string>
+    <string name="soundpack_settings_title">Sound Packs</string>
 
     <!-- Performance settings -->
     <string name="performance_settings_title">Performance</string>
@@ -812,6 +823,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lockscreen_buttons_playpause">Play/Pause music</string>
     <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
     <string name="lockscreen_buttons_sleep">Go to sleep</string>
+    <string name="lockscreen_enable_modlock_title">Custom lock screen</string>
 
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
@@ -907,6 +919,15 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="backlight_summary_disabled">Disabled</string>
     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Enabled</string>
+
+    <!-- Lockscreen background -->
+    <string name="lockscreen_background">Background</string>
+    <string name="lockscreen_background_style_title">Lock screen background</string>
+    <string name="background_default">Default background</string>
+    <string name="background_wallpaper">Custom wallpaper</string>
+    <string name="background_result_successful">Background changed</string>
+    <string name="background_result_not_successful">Background not changed</string>
+    <string name="setting_lockscreen_background">Applying background</string>
 
     <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
     <string name="accessibility_home_button_answers_call_prerefence_title">Home button answers call</string>

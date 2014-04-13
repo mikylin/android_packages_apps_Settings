@@ -257,7 +257,7 @@
     <string name="halo_msgbox_animation_flip">翻转</string>
 
     <!-- Powersaver settings -->
-    <string name="power_saver_settings_title">节能程序</string>
+    <string name="power_saver_settings_title">省电模式</string>
     <string name="power_saver_settings_summary">优化电池寿命</string>
     <string name="power_saver_toggles_mobile_title">移动网络</string>
     <string name="power_saver_toggles_location_title">位置</string>

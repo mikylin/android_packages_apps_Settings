@@ -187,6 +187,7 @@ public class Settings extends PreferenceActivity
             R.id.home_settings,
             R.id.interface_section,
             R.id.lock_screen_settings,
+            R.id.themes_settings,
             R.id.theme_settings,
             R.id.kylin_settings,
             R.id.privacy_settings_cyanogenmod,
@@ -887,12 +888,12 @@ public class Settings extends PreferenceActivity
 
         static int getHeaderType(Header header) {
             if (header.fragment == null && header.intent == null
-                    && header.id != R.id.theme_settings) {
+                    && header.id != R.id.themes_settings) {
                 return HEADER_TYPE_CATEGORY;
             } else if (header.id == R.id.wifi_settings
                     || header.id == R.id.bluetooth_settings
                     || header.id == R.id.profiles_settings
-                    || header.id == R.id.theme_settings
+                    || header.id == R.id.themes_settings
                     || header.id == R.id.voice_wakeup_settings
                     || header.id == R.id.location_settings) {
                 return HEADER_TYPE_SWITCH;
@@ -1019,7 +1020,7 @@ public class Settings extends PreferenceActivity
                         mProfileEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.location_settings) {
                         mLocationEnabler.setSwitch(holder.switch_);
-                    } else if (header.id == R.id.theme_settings) {
+                    } else if (header.id == R.id.themes_settings) {
                         mThemeEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.voice_wakeup_settings) {
                         mVoiceWakeupEnabler.setSwitch(holder.switch_);

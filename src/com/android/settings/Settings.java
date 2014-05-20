@@ -24,6 +24,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.admin.DevicePolicyManager;
+import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -66,6 +67,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.android.internal.util.ArrayUtils;
+import com.android.settings.ActivityPicker;
 import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.accessibility.ToggleAccessibilityServicePreferenceFragment;
 import com.android.settings.accessibility.ToggleCaptioningPreferenceFragment;
@@ -92,6 +94,7 @@ import com.android.settings.inputmethod.SpellCheckersSettings;
 import com.android.settings.inputmethod.UserDictionaryList;
 import com.android.settings.location.LocationEnabler;
 import com.android.settings.location.LocationSettings;
+import com.android.settings.kylinmod.PowerSaverSettings;
 import com.android.settings.nfc.AndroidBeam;
 import com.android.settings.nfc.PaymentSettings;
 import com.android.settings.print.PrintJobSettingsFragment;
@@ -184,6 +187,7 @@ public class Settings extends PreferenceActivity
             R.id.home_settings,
             R.id.interface_section,
             R.id.lock_screen_settings,
+            R.id.themes_settings,
             R.id.theme_settings,
             R.id.kylin_settings,
             R.id.privacy_settings_cyanogenmod,
@@ -384,6 +388,7 @@ public class Settings extends PreferenceActivity
         ProfilesSettings.class.getName(),
         PerformanceSettings.class.getName(),
         PolicyNativeFragment.class.getName(),
+        PowerSaverSettings.class.getName(),
         com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
         com.android.settings.quicksettings.QuickSettingsTiles.class.getName(),
         com.android.settings.cyanogenmod.QuietHours.class.getName()
@@ -883,12 +888,12 @@ public class Settings extends PreferenceActivity
 
         static int getHeaderType(Header header) {
             if (header.fragment == null && header.intent == null
-                    && header.id != R.id.theme_settings) {
+                    && header.id != R.id.themes_settings) {
                 return HEADER_TYPE_CATEGORY;
             } else if (header.id == R.id.wifi_settings
                     || header.id == R.id.bluetooth_settings
                     || header.id == R.id.profiles_settings
-                    || header.id == R.id.theme_settings
+                    || header.id == R.id.themes_settings
                     || header.id == R.id.voice_wakeup_settings
                     || header.id == R.id.location_settings) {
                 return HEADER_TYPE_SWITCH;
@@ -1015,7 +1020,7 @@ public class Settings extends PreferenceActivity
                         mProfileEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.location_settings) {
                         mLocationEnabler.setSwitch(holder.switch_);
-                    } else if (header.id == R.id.theme_settings) {
+                    } else if (header.id == R.id.themes_settings) {
                         mThemeEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.voice_wakeup_settings) {
                         mVoiceWakeupEnabler.setSwitch(holder.switch_);
@@ -1113,6 +1118,19 @@ public class Settings extends PreferenceActivity
         boolean revert = false;
         if (header.id == R.id.account_add) {
             revert = true;
+        }
+
+        // a temp hack while we prepare to switch
+        // to the new theme chooser.
+        if (header.id == R.id.theme_settings) {
+            try {
+                Intent intent = new Intent();
+                intent.setClassName("com.tmobile.themechooser", "com.tmobile.themechooser.ThemeChooser");
+                startActivity(intent);
+                return;
+            } catch(ActivityNotFoundException e) {
+                 // Do nothing, we will launch the submenu
+            }
         }
 
         super.onHeaderClick(header, position);
@@ -1251,4 +1269,5 @@ public class Settings extends PreferenceActivity
     public static class ASSRamBarActivity extends Settings { /* empty */ } 
     public static class QuickSettingsConfigActivity extends Settings { /* empty */ }
     public static class QuietHoursSettingsActivity extends Settings { /* empty */ }
+    public static class PowerSaverSettingsActivity extends Settings { /* empty */ }
 }

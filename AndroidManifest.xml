@@ -70,6 +70,8 @@
     <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.CHANGE_PRIVACY_GUARD_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_BLACKLIST" />
+    <uses-permission android:name="android.permission.CHANGE_PHONE_BLACKLIST" />
 
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
@@ -1779,13 +1781,18 @@
               </intent-filter>
         </activity>
 
-        <activity
-            android:name=".kylinmod.PowerSaverSettings"
-            android:label="@string/power_saver_settings_title" >
+        <activity android:name="Settings$PowerSaverSettingsActivity"
+                  android:label="@string/power_saver_settings_title"
+                  android:taskAffinity=""
+                  android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.kylinmod.PowerSaverSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                       android:resource="@id/battery_settings" />
         </activity>
 
         <activity
@@ -1832,6 +1839,7 @@
                 android:excludeFromRecents="true"
                 android:theme="@*android:style/Theme.Holo.Dialog.Alert" />
 
+        <activity android:name=".voicewakeup.VoiceWakeupSettings" />
         <activity android:name="Settings$VoiceWakeupSettingsActivity"
                 android:label="@string/voice_wakeup_settings_title"
                 android:taskAffinity=""

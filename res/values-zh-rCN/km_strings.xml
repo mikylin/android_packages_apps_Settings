@@ -257,8 +257,8 @@
     <string name="halo_msgbox_animation_flip">翻转</string>
 
     <!-- Powersaver settings -->
-    <string name="power_saver_settings_title">节能程序</string>
-    <string name="power_saver_settings_summary">优化电池寿命</string>
+    <string name="power_saver_settings_title">省电模式</string>
+    <string name="power_saver_settings_summary">优化续航时间</string>
     <string name="power_saver_toggles_mobile_title">移动网络</string>
     <string name="power_saver_toggles_location_title">位置</string>
     <string name="power_saver_toggles_performance_title">性能</string>
@@ -268,6 +268,9 @@
     <string name="power_saver_toggles_mobile_data_summary">屏幕关闭后将禁用数据连接</string>
     <string name="power_saver_toggles_cpu_governor_title">待机节能</string>
     <string name="power_saver_toggles_cpu_governor_summary">屏幕关闭后将切换到节能模式</string>
+    <string name="power_saver_toggles_other_title">其它</string>
+    <string name="power_saver_toggles_notification_title">启用通知</string>	
+    <string name="power_saver_toggles_notification_summary">当省电模式正在运行时，在通知栏显示通知信息</string>
 
     <!-- Force show navigation bar -->
     <string name="force_show_navigation_bar_title">显示虚拟导航栏</string>
@@ -387,17 +390,6 @@
     <string name="lockscreen_lock_color_summary">锁屏手柄的颜色</string>
     <string name="lockscreen_dots_color_title">斑点颜色</string>
     <string name="lockscreen_dots_color_summary">解锁时圆斑点的颜色</string>
-
-    <!-- Lockscreen background -->
-    <string name="lockscreen_background">背景</string>
-    <string name="lockscreen_background_style_title">锁屏背景风格</string>
-    <string name="background_color_fill_title">背景颜色</string>
-    <string name="background_default">默认背景的风格</string>
-    <string name="background_color_fill">颜色填充</string>
-    <string name="background_wallpaper">自定义图像</string>
-    <string name="transparency">背景透明度</string>
-    <string name="background_result_successful">改变背景</string>
-    <string name="background_result_not_successful">不改变背景</string>
 
     <!-- Shortcuts List -->
     <string name="recent_shortcut_title">快捷任务栏</string>

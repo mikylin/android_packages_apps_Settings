@@ -687,6 +687,10 @@ public class Settings extends PreferenceActivity
                 if(!Utils.isPackageInstalled(this, VOICE_WAKEUP_PACKAGE_NAME)) {
                     target.remove(header);
                 }
+            } else if (id == R.id.more_device_settings) {
+                if (!MoreDeviceSettings.hasItems()) {
+                    target.remove(header);
+                }
             }
 
             if (i < target.size() && target.get(i) == header
@@ -1282,5 +1286,9 @@ public class Settings extends PreferenceActivity
     public static class ASSRamBarActivity extends Settings { /* empty */ } 
     public static class QuickSettingsConfigActivity extends Settings { /* empty */ }
     public static class QuietHoursSettingsActivity extends Settings { /* empty */ }
+<<<<<<< HEAD
     public static class PowerSaverSettingsActivity extends Settings { /* empty */ }
+=======
+    public static class ThemeSettingsActivity extends Settings { /* empty */ }
+>>>>>>> d8e437ce60f1442913c284d28edc415504ea3770
 }

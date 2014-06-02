@@ -70,6 +70,9 @@
   <string name="profile_delete_confirm">Odstranit tento profil?</string>
   <string name="profile_app_delete_confirm">Odebrat tuto aplikaci?</string>
   <string name="profile_cannot_delete">Nelze odstranit aktivní profil</string>
+  <string name="profile_networkmode_2g">2G</string>
+  <string name="profile_networkmode_3g">3G</string>
+  <string name="profile_networkmode_2g3g">2G/3G</string>
   <string name="profile_connectionoverrides_title">Jiné připojení</string>
   <string name="profile_volumeoverrides_title">Jiná hlasitost</string>
   <string name="connection_state_disabled">Zakázat</string>
@@ -106,13 +109,16 @@
   <string name="profile_lockmode_insecure_summary">Použít nezabezpečený zámek obrazovky</string>
   <string name="profile_lockmode_disabled_summary">Zámek obrazovky je zakázán</string>
   <string name="profile_airplanemode_title">Režim V letadle</string>
+  <string name="toggleWifi">Wi-Fi</string>
   <string name="toggleWifiAp">Přenosný Wi-Fi hotspot</string>
+  <string name="toggleBluetooth">Bluetooth</string>
   <string name="toggleData">Mobilní data</string>
   <string name="toggleSync">Synchronizace</string>
+  <string name="toggleWimax">WiMAX</string>
   <string name="volume_ring_only_description">Vyzvánění</string>
   <string name="link_volume_ringtones">Hlasitost vyzvánění a oznamování</string>
   <string name="link_volume_mutes">Tichý režim ovlivňuje oznamování</string>
-  <string name="volume_keys_control_ring_stream">Tlačítka hlasitosti ovládají hlasitost vyzvánění</string>
+  <string name="volume_keys_control_ring_stream">Tlačítka pro hlasitost ovládají hlasitost vyzvánění</string>
   <string name="ring_mode_title">Režim vyzvánění</string>
   <string name="ring_mode_normal">Normální</string>
   <string name="ring_mode_vibrate">Vibrace</string>
@@ -128,7 +134,7 @@
   <string name="notification_vibrate_during_calls_title">Vibrovat při hovoru</string>
   <string name="notification_vibrate_during_calls_summary">Při hovoru způsobí upozornění jemné zavibrování</string>
   <string name="volume_adjust_sounds_enable_title">Zvuk při změně hlasitosti</string>
-  <string name="volume_adjust_sounds_enable_summary">Přehrát zvuk při změně hlasitosti pomocí tlačítka</string>
+  <string name="volume_adjust_sounds_enable_summary">Přehrát zvuk při změně hlasitosti pomocí tlačítek</string>
   <string name="icon_picker_title">Vyberte vlastní ikonu</string>
   <string name="icon_picker_system_icons_title">Systemové ikony</string>
   <string name="icon_picker_gallery_title">Galerie</string>
@@ -146,11 +152,12 @@
   <string name="notification_light_missed_call_title">Zmeškané hovory</string>
   <string name="notification_light_voicemail_title">Hlasová schránka</string>
   <string name="adaptive_backlight_title">Přizpůsobivé podsvícení</string>
-  <string name="adaptive_backlight_summary">Inteligentní přizpůsobování intenzity podsvícení obrazovky a zlepšení výdrže baterie</string>
+  <string name="adaptive_backlight_summary">Dynamicky upravovat podsvětlení obrazovky pro lepší výdrž baterie</string>
   <string name="wake_when_plugged_or_unplugged_title">Probudit při nabíjení</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení od nabíječky</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení nabíječky</string>
   <string name="screen_animation_off_title">Animace vypnutí obrazovky</string>
-  <string name="screen_animation_style_title">Vzhled animace</string>
+  <string name="screen_animation_style_title">Styl animace vypnutí obrazovky</string>
+  <string name="screen_animation_style_disabled">Vypnuto</string>
   <string name="screen_animation_style_electronbeam">Elektronový paprsek</string>
   <string name="screen_animation_style_fade">Pozvolné ztmavnutí</string>
   <string name="edit_light_settings">Upravit nastavení osvětlení</string>
@@ -190,6 +197,7 @@
   <string name="unlock_camera_unlock_summary">Po stisknutí tlačítka fotoaparátu se zařízení odemkne</string>
   <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
   <string name="unlock_quick_unlock_control_summary">Automatické odemknutí, pokud je zadán správný PIN/heslo</string>
+  <string name="unlock_buttons_disabled_by_security">Zámek obrazovky je zabezpečen</string>
   <string name="delay_and_timeout_title">Zpožděné zamykání</string>
   <string name="slide_lock_delay_title">Zpoždění zamykací obrazovky</string>
   <string name="slide_lock_timeout_delay_title">Zamknutí po čase</string>
@@ -216,8 +224,11 @@
   <string name="tile_picker_title">Dlaždice a rozmístění</string>
   <string name="tile_picker_summary">Zobrazení, změna rozmístění či vlastností zvolených dlaždic</string>
   <string name="tile_choose_title">Zvolte dlaždici</string>
+  <string name="title_qs_small_icons">Zobrazovat menší dlaždice</string>
+  <string name="summary_qs_small_icons">Zobrazovat dlaždice menší a docílit tak většího počtu sloupců</string>
   <string name="title_tile_airplane">Režim V letadle</string>
   <string name="title_tile_battery">Stav baterie</string>
+  <string name="title_tile_bluetooth">Bluetooth</string>
   <string name="title_tile_brightness">Jas</string>
   <string name="title_tile_camera">Fotoaparát</string>
   <string name="title_tile_sleep">Uspat</string>
@@ -230,7 +241,6 @@
   <string name="title_tile_settings">Nastavení</string>
   <string name="title_tile_sound">Zvuk</string>
   <string name="title_tile_sync">Synchronizace</string>
-  <string name="title_tile_wifiap">Wi-Fi AP</string>
   <string name="title_tile_user">Přepnutí uživatele</string>
   <string name="title_tile_networkmode">Režim sítě</string>
   <string name="title_tile_screen_timeout">Zhasínání obrazovky</string>
@@ -240,12 +250,13 @@
   <string name="title_tile_network_adb">ADB po síti</string>
   <string name="title_dynamic_tiles">Dynamické dlaždice</string>
   <string name="dynamic_tiles_note_title">Poznámka</string>
-  <string name="dynamic_tiles_note_summary">Dynamické dlaždice nejsou vždy viditelné. Jsou zobrazeny pouze na určitou systémovou událost</string>
+  <string name="dynamic_tiles_note_summary">Dynamické dlaždice nejsou vždy viditelné, zobrazí se vždy na událost systému</string>
   <string name="title_dynamic_alarm">Budík</string>
   <string name="title_dynamic_bugreport">Ohlášení chyby</string>
   <string name="title_dynamic_dock_battery">Baterie doku</string>
   <string name="title_dynamic_ime">Změna IME</string>
   <string name="title_dynamic_usbtether">Sdílení USB</string>
+  <string name="title_dynamic_wifi">Přenášet obrazovku</string>
   <string name="title_general">Obecné</string>
   <string name="title_quick_pulldown">Rychlé vysunutí nabídky</string>
   <string name="summary_quick_pulldown">Tažením dolů z %1$s strany stavového řádku bude vysunuta rychlá nabídka nastavení</string>
@@ -304,10 +315,10 @@ Každý řádek v seznamu podsvícení odpovídá jednomu <i>řídícímu bodu</
 Pro změnu úrovně podsvícení daného bodu změňte pomocí posuvného ovládacího prvku
 jeho hodnotu. Úroveň podsvícení bude okamžitě změněna na stejnou úroveň, na kterou
 je onen posuvný prvek nastaven a tím je možné okamžitě zkontrolovat úroveň podsvícení.\n
-Další možnosti jsou dostupné dlouhým dotykem na řádce daného bodu. Zvolením \'Změnit\',
+Další možnosti jsou dostupné dlouhým dotykem na řádce daného bodu. Zvolením „Změnit“,
 můžete změnit jak úroveň okolního světla tak i ručně vložit požadovanou hodnotu
-podsvícení. Zvolením \'Rozdělit\' dojde k rozdělení daného bodu na dva, které pak lze
-jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' smaže zvolenou řádku.</string>
+podsvícení. Zvolením „Rozdělit“ dojde k rozdělení daného bodu na dva, které pak lze
+jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ smaže zvolenou řádku.</string>
   <string name="auto_brightness_sensitivity_title">Nastavení citlivosti</string>
   <string name="auto_brightness_sensitivity_verylow">Velmi nízká</string>
   <string name="auto_brightness_sensitivity_low">Nízká</string>
@@ -333,16 +344,20 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="root_access_apps">Pouze aplikace</string>
   <string name="root_access_adb">Pouze ADB</string>
   <string name="root_access_all">Aplikace a ADB</string>
-  <string name="ok">OK</string>
   <string name="quiet_hours_title">Režim klidu</string>
   <string name="quiet_hours_summary">Nastavení hodin, kdy má být zařízení v režimu klidu</string>
   <string name="quiet_hours_enabled">Povolit režim klidu</string>
   <string name="quiet_hours_ringer">Telofonní vyzvánění</string>
-  <string name="quiet_hours_mute">Ztišit upozornění</string>
-  <string name="quiet_hours_system">Vypnout systémové zvuky</string>
-  <string name="quiet_hours_still">Vypnout vibrace</string>
-  <string name="quiet_hours_dim">Vypnout světelné upozornění</string>
-  <string name="quiet_hours_haptic">Vypnout hmatovou odezvu</string>
+  <string name="quiet_hours_mute">Upozornění</string>
+  <string name="quiet_hours_mute_summary">Ztišit upozornění</string>
+  <string name="quiet_hours_system">Systémové zvuky</string>
+  <string name="quiet_hours_system_summary">Vypnout systémové zvuky</string>
+  <string name="quiet_hours_still">Vibrace</string>
+  <string name="quiet_hours_still_summary">Vypnout vibrace</string>
+  <string name="quiet_hours_dim">Světelná signalizace</string>
+  <string name="quiet_hours_dim_summary">Vypnout světelné upozornění</string>
+  <string name="quiet_hours_haptic">Hmatová odezva</string>
+  <string name="quiet_hours_haptic_summary">Vypnout hmatovou odezvu</string>
   <string name="quiet_hours_active_from">Aktivovat od</string>
   <string name="quiet_hours_active_to">do</string>
   <string name="quiet_hours_ringer_allow_all">Pro všechny</string>
@@ -354,7 +369,9 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="mod_version">KylinMod verze</string>
   <string name="mod_version_default">Neznámá</string>
   <string name="build_date">Datum sestavení</string>
+  <string name="cpu_info">CPU</string>
   <string name="mem_info">Paměť</string>
+  <string name="phone_service_state">Hlas: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
   <string name="anonymous_statistics_title">KylinMod statistiky</string>
   <string name="anonymous_statistics_summary">Pomozte ke zlepšení CyanogenModu pomocí posíláním anonymních statistik</string>
   <string name="anonymous_statistics_warning_title">Info</string>
@@ -371,11 +388,19 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="preview_carrier_title">Operátor</string>
   <string name="header_category_interface">Přizpůsobení</string>
   <string name="themes_settings_title">Motiv vzhledu</string>
+  <string name="themepacks_settings_title">Balíčky témat</string>
+  <string name="styles_settings_title">Styly</string>
+  <string name="icons_settings_title">Ikony</string>
+  <string name="fonts_settings_title">Písma</string>
+  <string name="wallpaper_settings_title">Tapety</string>
+  <string name="lockscreen_wallpaper_settings_title">Tapety zámku obrazovky</string>
+  <string name="bootanim_settings_title">Startovací animace</string>
+  <string name="soundpack_settings_title">Balíčky zvuků</string>
   <string name="performance_settings_title">Nastavení výkonu</string>
   <string name="performance_settings_warning_title">Postupujte s opatrností!</string>
-  <string name="performance_settings_warning">Tato nastavení jsou určena pouze pro experimentování a jakékoliv změny v nich můžou vést k nestabilitě či pádům systému, ztrátě dat nebo selhání hardware.\n\nNeposílejte prosím hlášení o chybách, pokud jste toto nastavení jakkoliv měnili.</string>
+  <string name="performance_settings_warning">Tato nastavení jsou experimentální a jakékoliv změny mohou vést k nestabilitě či pádům systému, ztrátě dat nebo selhání hardware.\nNeposílejte prosím hlášení o chybách, pokud jste je jakkoliv měnili.</string>
   <string name="performance_set_on_boot">Nastavit při spuštění</string>
-  <string name="performance_set_on_boot_summary">Provést nastavení změn při startu systému</string>
+  <string name="performance_set_on_boot_summary">Obnovit nastavení při restartu</string>
   <string name="processor_title">Procesor</string>
   <string name="cpu_cur_freq_title">Aktuální frekvence CPU</string>
   <string name="cpu_governors_title">CPU regulátor</string>
@@ -394,16 +419,18 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="pref_force_highend_gfx_title">Vynutit nejkvalitnější grafiku</string>
   <string name="pref_force_highend_gfx_summary">Povolit nejkvalitnější vizuální efekty - například průhlednou stavovou/navigační lištu (vyžaduje pokročilý grafický čip a také restart)</string>
   <string name="kill_app_longpress_back">Vynucené ukončení aplikace</string>
-  <string name="kill_app_longpress_back_summary">Dlouhým stiskem tlačítka zpět se provede ukončení aplikace na popředí.</string>
+  <string name="kill_app_longpress_back_summary">Dlouhým stiskem tlačítka zpět se provede ukončení aplikace na popředí</string>
   <string name="changelog_title">Zobrazit seznam změn</string>
   <string name="changelog_loading">Načítá se seznam změn\u2026</string>
   <string name="changelog_error">Chyba při načítání seznamu změn</string>
   <string name="changelog_unknown">Neznámý</string>
   <string name="changelog_version">Verze</string>
-  <string name="cmupdate_settings_title">Aktualizace KylinMod</string>
+  <string name="contributor_cloud_title">Zobrazit přispěvatele</string>
+  <string name="cmupdate_settings_title">Aktualizace CyanogenMod</string>
   <string name="cmupdate_settings_summary">Zjištění dostupnosti nové aktualizace</string>
   <string name="advanced_settings_title">Rozšířené</string>
   <string name="development_tools_title">Spustit vývojové nástroje</string>
+  <string name="allow_mock_sms">Povolit falešné SMS</string>
   <string name="privacy_settings_cyanogenmod_title">Soukromí</string>
   <string name="privacy_guard_switch_label">Povolit Ochranu soukromí</string>
   <string name="privacy_guard_dlg_title">Povolit Ochranu soukromí?</string>
@@ -429,7 +456,7 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="blacklist_empty_text">V seznamu černé listiny není žádné číslo. Položku přidáte pomocí tlačítka Přidat číslo (+).</string>
   <string name="blacklist_disabled_empty_text">Pro zakázání komunikace z čísel na černé listině je potřebu tuto černou listinu povolit.</string>
   <string name="blacklist_summary_disabled">Zakázána</string>
-  <string name="blacklist_summary">Příchozí volání a zprávy z čísel na černé listině budou blokovány</string>
+  <string name="blacklist_summary">Příchozí hovory a zprávy z čísel na černé listině budou blokovány</string>
   <string name="blacklist_notify">Zobrazit upozornění</string>
   <string name="blacklist_private_numbers_title">Skrytá čísla</string>
   <string name="blacklist_private_numbers_summary_disabled">Neblokovat volání ze skrytých čísel</string>
@@ -500,7 +527,7 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="lock_clock_summary">Upravit výchozí nastavení pro domácí obrazovku nebo obrazovku zámku</string>
   <string name="power_notifications_category_title">Zvuk nabíječky</string>
   <string name="power_notifications_enable_title">Povolit</string>
-  <string name="power_notifications_enable_summary">Přehrát zvuk při připojení/odpojení nabíječky</string>
+  <string name="power_notifications_enable_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
   <string name="power_notifications_vibrate_title">Vibrovat</string>
   <string name="power_notifications_ringtone_title">Zvuk upozornění</string>
   <string name="power_notifications_ringtone_silent">Tichý</string>
@@ -525,18 +552,25 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="icon_picker_browser">Prohlížeč</string>
   <string name="icon_picker_calendar">Kalendář</string>
   <string name="icon_picker_camera">Fotoaparát</string>
+  <string name="icon_picker_chrome">Chrome</string>
   <string name="icon_picker_contacts">Kontakty</string>
   <string name="icon_picker_email">E-mail</string>
   <string name="icon_picker_email2">E-mail Holo</string>
+  <string name="icon_picker_facebook">Facebook</string>
   <string name="icon_picker_gallery">Galerie</string>
   <string name="icon_picker_google_small">Google (malý)</string>
+  <string name="icon_picker_googleplus">Google+</string>
+  <string name="icon_picker_googletalk">Hangouts</string>
   <string name="icon_picker_maps">Mapy</string>
   <string name="icon_picker_movie">Video</string>
   <string name="icon_picker_music">Hudba</string>
   <string name="icon_picker_nav_normal">Navigace</string>
   <string name="icon_picker_phone">Telefon</string>
+  <string name="icon_picker_podcast">Podcast</string>
+  <string name="icon_picker_rss">Rss</string>
   <string name="icon_picker_search">Vyhledávání</string>
   <string name="icon_picker_sms">Zprávy</string>
+  <string name="icon_picker_twitter">Twitter</string>
   <string name="lockscreen_buttons_title">Chování tlačítek</string>
   <string name="lockscreen_buttons_summary">Zobrazit nebo změnit chování tlačítek na zamčené obrazovce</string>
   <string name="lockscreen_long_press_back_title">Dlouhý stisk tlačítka Zpět</string>
@@ -549,6 +583,7 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="lockscreen_buttons_playpause">Přehrávat/pozastavit skladbu</string>
   <string name="lockscreen_buttons_toggle_sound">Přepnout zvukový režim</string>
   <string name="lockscreen_buttons_sleep">Uspat zařízení</string>
+  <string name="lockscreen_enable_modlock_title">Vlastní zámek obrazovky</string>
   <string name="navigation_bar_category">Navigační lišta</string>
   <string name="navigation_bar_title">Tlačítka a rozmístění</string>
   <string name="navigation_bar_left_title">Režim levé ruky</string>
@@ -583,8 +618,8 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="expanded_desktop_disabled">Vypnuto</string>
   <string name="expanded_desktop_status_bar">Stavová lišta zobrazena</string>
   <string name="expanded_desktop_no_status_bar">Stavová lišta skryta</string>
-  <string name="expanded_desktop_system_bars_visibility">Vypnout v obrazovce zámku</string>
-  <string name="expanded_desktop_system_bars_visibility_summary">Při zapnuté funkci rozšířené plochy zobrazit stavovou i navigační lištu v obrazovce zámku</string>
+  <string name="expanded_desktop_system_bars_visibility">Vypnout na obrazovce zámku</string>
+  <string name="expanded_desktop_system_bars_visibility_summary">Při zapnuté funkci rozšířené plochy zobrazit stavovou i navigační lištu na obrazovce zámku</string>
   <string name="power_menu_profiles_title">Přepínač profilů</string>
   <string name="power_menu_airplane_title">Režim V letadle</string>
   <string name="power_menu_user_title">Přepínač uživatelů</string>
@@ -606,15 +641,12 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="hardware_keys_action_voice_search">Hlasové vyhledávání</string>
   <string name="hardware_keys_action_in_app_search">Hledat v aplikacích</string>
   <string name="hardware_keys_action_launch_camera">Spustit fotoaparát</string>
-  <string name="home_wake_title">Probudit tlačítkem Domů</string>
   <string name="home_wake_summary">Stiskem tlačítka Domů bude zařízení probuzeno</string>
-  <string name="camera_wake_title">Probudit tlačítkem fotoaparátu</string>
   <string name="camera_wake_summary">Stiskem tlačítka fotoaparátu bude zařízení probuzeno</string>
   <string name="camera_sleep_on_release_title">Náhled obrazovky</string>
   <string name="camera_sleep_on_release_summary">Polovičním stiskem tlačítka bude rozsvícena obrazovka pouze po dobu, po kterou je tlačítko stisknuté</string>
   <string name="camera_music_controls_title">Ovládání přehrávání</string>
   <string name="camera_music_controls_summary">Pokud je obrazovka vypnuta, bude dlouhým stiskem klávesy fotoaparátu provedeno pozastavení/spuštění přehrávání aktuální skladby</string>
-  <string name="volume_wake_title">Probudit tlačítkem hlasitosti</string>
   <string name="volume_wake_summary">Stiskem tlačítka hlasitosti bude zařízení probuzeno</string>
   <string name="volbtn_music_controls_title">Ovládání přehrávání</string>
   <string name="volbtn_music_controls_summary">Při vypnuté obrazovce bude dlouhý stisk tlačítek hlasitosti sloužit k pohybu ve skladbách</string>
@@ -622,7 +654,7 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="volbtn_cursor_control_off">Zakázáno</string>
   <string name="volbtn_cursor_control_on">Tlačítka hlasitosti nahoru/dolu posunou kurzor vlevo/vpravo</string>
   <string name="volbtn_cursor_control_on_reverse">Tlačítka hlasitosti nahoru/dolu posunou kurzor vpravo/vlevo</string>
-  <string name="swap_volume_buttons_title">Převrátit smysl tlačítek hlasistosti</string>
+  <string name="swap_volume_buttons_title">Přeorientovat</string>
   <string name="swap_volume_buttons_summary">V případě otočení obrazovky bude převrácen i smysl tlačítek hlasitosti</string>
   <string name="button_backlight_title">Podsvícení</string>
   <string name="button_backlight_enabled">Podsvícení tlačítek</string>
@@ -634,6 +666,13 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="backlight_summary_disabled">Vypnuto</string>
   <string name="backlight_summary_enabled_with_timeout">Zapnout na <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">Zapnuto</string>
+  <string name="lockscreen_background">Pozadí</string>
+  <string name="lockscreen_background_style_title">Pozadí zámku obrazovky</string>
+  <string name="background_default">Výchozí pozadí</string>
+  <string name="background_wallpaper">Vlastní tapeta</string>
+  <string name="background_result_successful">Pozadí změněno</string>
+  <string name="background_result_not_successful">Pozadí nezměněno</string>
+  <string name="setting_lockscreen_background">Pozadí se nastavuje\u2026</string>
   <string name="accessibility_home_button_answers_call_prerefence_title">Tlačítko Domů přijme hovor</string>
   <string name="confirm_delete_apn">Položka APN bude smazána.</string>
   <string name="status_bar_title">Stavová lišta</string>
@@ -809,10 +848,13 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. \'Odstranit\' sma
   <string name="accessibility_sync_in_progress">Provádí se synchronizace\u2026</string>
   <string name="wifi_mode">Režim</string>
   <string name="wifi_mode_ibss">Ad-Hoc (IBSS) síť</string>
+  <string name="wifi_mode_ibss_short">Ad-Hoc</string>
   <string name="wifi_ibss_freq_title">Kanál/frekvence</string>
   <string name="wifi_channel">Kanál</string>
+  <string name="wifi_mhz">MHz</string>
   <string name="voice_wakeup_settings_title">Hlasové probuzení</string>
   <string name="voice_wakeup_retrain_title">Naučit se rozpoznání hlasu</string>
   <string name="voice_wakeup_activity_title">Aktivita ke spuštění</string>
   <string name="voice_wakeup_default_activity">Chytré karty Google</string>
+  <string name="sub_no_sim">Není SIM karta</string>
 </resources>

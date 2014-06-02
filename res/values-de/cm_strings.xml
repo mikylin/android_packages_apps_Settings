@@ -22,6 +22,8 @@
   <string name="wifi_setting_priority_title">WLAN-Priorität</string>
   <string name="wifi_setting_priority_summary">Priorität der gespeicherten Netzwerke festlegen</string>
   <string name="change_crypt_password_title">Passwort ändern</string>
+  <string name="change_crypt_password_summary">Ändert das zur Geräteverschlüsselung genutzte Passwort</string>
+  <string name="encryptionpassword_choose_your_password_header">Verschlüsselungspasswort festlegen</string>
   <string name="lock_screen_title">Bildschirmsperre</string>
   <string name="increasing_ring_title">Ansteigender Klingelton</string>
   <string name="checkbox_increasing_ring">Aktivieren</string>
@@ -119,7 +121,7 @@
   <string name="volume_ring_only_description">Klingelton</string>
   <string name="link_volume_ringtones">Gleiche Lautstärke für Klingelton und Benachrichtigungen</string>
   <string name="link_volume_mutes">Klingelton und Benachrichtigungen gemeinsam stummschalten</string>
-  <string name="volume_keys_control_ring_stream">Lautstärketasten steuern Benachrichtigungslautstärke</string>
+  <string name="volume_keys_control_ring_stream">Lautstärketasten steuern Klingeltonlautstärke</string>
   <string name="ring_mode_title">Klingelmodus</string>
   <string name="ring_mode_normal">Normal</string>
   <string name="ring_mode_vibrate">Vibration</string>
@@ -153,11 +155,12 @@
   <string name="notification_light_missed_call_title">Verpasster Anruf</string>
   <string name="notification_light_voicemail_title">Sprachnachricht</string>
   <string name="adaptive_backlight_title">Adaptive Beleuchtung</string>
-  <string name="adaptive_backlight_summary">Die Hintergrundbeleuchtung des Bildschirms intelligent regeln, um die Akkulaufzeit zu verbessern</string>
+  <string name="adaptive_backlight_summary">Die Hintergrundbeleuchtung des Bildschirms dynamisch regeln, um die Akkulaufzeit zu verbessern</string>
   <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen des Ladegerätes das Display anschalten</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle das Display anschalten</string>
   <string name="screen_animation_off_title">Abschaltanimation</string>
-  <string name="screen_animation_style_title">Animationsstil</string>
+  <string name="screen_animation_style_title">Stil der Abschaltanimation</string>
+  <string name="screen_animation_style_disabled">Deaktiviert</string>
   <string name="screen_animation_style_electronbeam">Elektronenstrahl</string>
   <string name="screen_animation_style_fade">Ausblenden</string>
   <string name="edit_light_settings">Farbeinstellungen ändern</string>
@@ -223,6 +226,8 @@
   <string name="tile_picker_title">Kacheln anordnen</string>
   <string name="tile_picker_summary">Kacheln auswählen oder ihre Reihenfolge ändern</string>
   <string name="tile_choose_title">Kachel auswählen</string>
+  <string name="title_qs_small_icons">Kleinere Kacheln anzeigen</string>
+  <string name="summary_qs_small_icons">Kleinere Kachel anzeigen, um die Spaltenanzahl zu erhöhen</string>
   <string name="title_tile_airplane">Flugmodus</string>
   <string name="title_tile_battery">Akkustand</string>
   <string name="title_tile_bluetooth">Bluetooth</string>
@@ -325,8 +330,7 @@ Durch langes Drücken auf die Zeilen stehen weitere Optionen zur Verfügung. Dur
 \"Bearbeiten\" können sowohl der Umgebungshelligkeitswert der Stützstelle verändert als auch der
 Bildschirmhelligkeitswert manuell eingegeben werden. Die Auswahl von \"Helligkeitsstufe aufteilen\"
 erlaubt die Duplizierung einer Zeile in eine zweite Zeile, um zusätzliche Stützstellen hinzuzufügen.
-Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverlauf entfernt werden.
-    </string>
+Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverlauf entfernt werden.</string>
   <string name="auto_brightness_sensitivity_title">Regelungsträgheit</string>
   <string name="auto_brightness_sensitivity_verylow">Sehr träge</string>
   <string name="auto_brightness_sensitivity_low">Träge</string>
@@ -357,11 +361,16 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="quiet_hours_summary">Benachrichtigungen in einem vorgegebenen Zeitraum ändern</string>
   <string name="quiet_hours_enabled">Ruhige Stunden aktiv</string>
   <string name="quiet_hours_ringer">Klingeln bei Anruf</string>
-  <string name="quiet_hours_mute">Benachrichtigungston  deaktivieren</string>
-  <string name="quiet_hours_system">Systemtöne deaktivieren</string>
-  <string name="quiet_hours_still">Vibration  deaktivieren</string>
-  <string name="quiet_hours_dim">Benachrichtigungslicht  deaktivieren</string>
-  <string name="quiet_hours_haptic">Haptisches Feedback  deaktivieren</string>
+  <string name="quiet_hours_mute">Benachrichtigungen</string>
+  <string name="quiet_hours_mute_summary">Benachrichtigungstton deaktivieren</string>
+  <string name="quiet_hours_system">Systemtöne</string>
+  <string name="quiet_hours_system_summary">Systemtöne deaktivieren</string>
+  <string name="quiet_hours_still">Vibration</string>
+  <string name="quiet_hours_still_summary">Vibration deaktivieren</string>
+  <string name="quiet_hours_dim">Benachrichtigungslicht</string>
+  <string name="quiet_hours_dim_summary">Benachrichtigungslicht deaktivieren</string>
+  <string name="quiet_hours_haptic">Haptisches Feedback</string>
+  <string name="quiet_hours_haptic_summary">Haptisches Feedback deaktivieren</string>
   <string name="quiet_hours_active_from">Aktiv von</string>
   <string name="quiet_hours_active_to">bis</string>
   <string name="quiet_hours_ringer_allow_all">Bei jedem Anrufer klingeln</string>
@@ -391,6 +400,14 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="preview_carrier_title">Anbieter</string>
   <string name="header_category_interface">Personalisierung</string>
   <string name="themes_settings_title">Designs</string>
+  <string name="themepacks_settings_title">Designpakete</string>
+  <string name="styles_settings_title">Stile</string>
+  <string name="icons_settings_title">Symbole</string>
+  <string name="fonts_settings_title">Schriftarten</string>
+  <string name="wallpaper_settings_title">Hintergründe</string>
+  <string name="lockscreen_wallpaper_settings_title">Sperrbildschirm-Hintergründe</string>
+  <string name="bootanim_settings_title">Boot-Animationen</string>
+  <string name="soundpack_settings_title">Tonpakete</string>
   <string name="performance_settings_title">Leistung</string>
   <string name="performance_settings_warning_title">VORSICHT</string>
   <string name="performance_settings_warning">Diese experimentellen Einstellungen beeinflussen die Leistung und Stabilität des Systems.\n\nBitte keine Fehler melden, wenn die Standardeinstellungen geändert wurden.</string>
@@ -420,10 +437,12 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="changelog_error">Changelog kann nicht geladen werden</string>
   <string name="changelog_unknown">Unbekannt</string>
   <string name="changelog_version">Version</string>
-  <string name="cmupdate_settings_title">KylinMod-Updates</string>
+  <string name="contributor_cloud_title">Mitwirkende anzeigen</string>
+  <string name="cmupdate_settings_title">CyanogenMod-Updates</string>
   <string name="cmupdate_settings_summary">Auf neue Versionen prüfen und diese installieren</string>
   <string name="advanced_settings_title">Erweitert</string>
   <string name="development_tools_title">Entwickler-Werkzeuge</string>
+  <string name="allow_mock_sms">Simulierte SMS zulassen</string>
   <string name="privacy_settings_cyanogenmod_title">Datenschutz</string>
   <string name="privacy_guard_switch_label">Datenschutz aktivieren</string>
   <string name="privacy_guard_dlg_title">Datenschutz aktivieren?</string>
@@ -520,7 +539,7 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="lock_clock_summary">Einstellungen des Standard-Widgets auf Sperr- und Startbildschirm anpassen</string>
   <string name="power_notifications_category_title">Ladegeräte-Töne</string>
   <string name="power_notifications_enable_title">Aktivieren</string>
-  <string name="power_notifications_enable_summary">Beim Anschließen oder Trennen des Ladegerätes einen Ton abspielen</string>
+  <string name="power_notifications_enable_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
   <string name="power_notifications_vibrate_title">Vibrieren</string>
   <string name="power_notifications_ringtone_title">Benachrichtigungston</string>
   <string name="power_notifications_ringtone_silent">Kein Ton</string>
@@ -576,6 +595,7 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="lockscreen_buttons_playpause">Medien: Play/Pause</string>
   <string name="lockscreen_buttons_toggle_sound">Klingelmodus</string>
   <string name="lockscreen_buttons_sleep">Ruhezustand</string>
+  <string name="lockscreen_enable_modlock_title">Benutzerdefinierter Sperrbildschirm</string>
   <string name="navigation_bar_category">Navigationsleiste</string>
   <string name="navigation_bar_title">Schaltflächen</string>
   <string name="navigation_bar_left_title">Linkshänder-Modus</string>
@@ -633,15 +653,12 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="hardware_keys_action_voice_search">Sprachsuche</string>
   <string name="hardware_keys_action_in_app_search">In-App-Suche</string>
   <string name="hardware_keys_action_launch_camera">Kamera starten</string>
-  <string name="home_wake_title">Aufwecken mit Home-Taste</string>
   <string name="home_wake_summary">Drücken der Home-Taste aktiviert den Bildschirm</string>
-  <string name="camera_wake_title">Aufwecken mit Kamera-Taste</string>
   <string name="camera_wake_summary">Drücken der Kamera-Taste aktiviert den Bildschirm</string>
   <string name="camera_sleep_on_release_title">Kurzer Blick</string>
   <string name="camera_sleep_on_release_summary">Der Bildschirm wird aktiviert, solange die Kamera-Taste halb durchgedrückt gehalten wird</string>
   <string name="camera_music_controls_title">Musiksteuerung</string>
   <string name="camera_music_controls_summary">Bei abgeschaltetem Bildschirm durch langen Druck der Kamera-Taste die Wiedergabe starten / pausieren</string>
-  <string name="volume_wake_title">Aufwecken mit Lautstärketaste</string>
   <string name="volume_wake_summary">Drücken einer Lautstärketaste aktiviert den Bildschirm</string>
   <string name="volbtn_music_controls_title">Musiksteuerung</string>
   <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langen Druck auf Lautstärketasten zum nächsten / vorherigen Titel springen</string>
@@ -649,7 +666,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="volbtn_cursor_control_off">Deaktiviert</string>
   <string name="volbtn_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
   <string name="volbtn_cursor_control_on_reverse">Lauter-/Leiser-Taste bewegt den Cursor nach rechts/links</string>
-  <string name="swap_volume_buttons_title">Lautstärketasten umkehren</string>
   <string name="swap_volume_buttons_summary">Belegung der Lautstärketasten umkehren, wenn das Gerät gedreht wird</string>
   <string name="button_backlight_title">Hintergrundbeleuchtung</string>
   <string name="button_backlight_enabled">Tasten beleuchten</string>
@@ -661,6 +677,13 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="backlight_summary_disabled">Deaktiviert</string>
   <string name="backlight_summary_enabled_with_timeout">Für <xliff:g id="timeout">%s</xliff:g> aktiviert</string>
   <string name="backlight_summary_enabled">Aktiviert</string>
+  <string name="lockscreen_background">Hintergrund</string>
+  <string name="lockscreen_background_style_title">Sperrbildschirm-Hintergrund</string>
+  <string name="background_default">Standardhintergrund</string>
+  <string name="background_wallpaper">Benutzerdefinierter Hintergrund</string>
+  <string name="background_result_successful">Hintergrund wurde geändert</string>
+  <string name="background_result_not_successful">Hintergrund wurde nicht geändert</string>
+  <string name="setting_lockscreen_background">Hintergrund anwenden</string>
   <string name="accessibility_home_button_answers_call_prerefence_title">Anruf mit Home-Taste annehmen</string>
   <string name="confirm_delete_apn">Der Zugangspunkt wird gelöscht</string>
   <string name="status_bar_title">Statusleiste</string>
@@ -684,7 +707,7 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
   <string name="development_shortcut_title">Entwickler-Abkürzungen</string>
   <string name="development_shortcut_summary">\'Anwendungsdaten löschen\' und\'Beenden erzwingen\' in der Benachrichtungsleiste und im Anwendungsverlauf anzeigen</string>
   <string name="usb_mass_storage_title">Massenspeicher</string>
-  <string name="usb_mass_storage_summary">USB-Massenspeicher aktivieren</string>
+  <string name="usb_mass_storage_summary">Ermöglicht den Datentransfer zwischen Ihrem Computer und der SD-Karte, indem diese als USB-Massenspeicher eingebunden wird</string>
   <string name="storage_rescan_media">Speichermedium nach Mediendateien durchsuchen</string>
   <string name="storage_rescan_media_complete">Suche abgeschlossen</string>
   <string name="whisperpush_title">WhisperPush</string>
@@ -843,4 +866,5 @@ auf <xliff:g id="new" example="libart.so">%2$s</xliff:g> zu ändern?</string>
   <string name="wifi_channel">Kanal</string>
   <string name="wifi_mhz">MHz</string>
   <string name="voice_wakeup_default_activity">Google Now</string>
+  <string name="sub_no_sim">Keine SIM-Karte</string>
 </resources>
